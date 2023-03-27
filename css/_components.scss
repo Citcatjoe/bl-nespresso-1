@@ -1,0 +1,50 @@
+.card
+{
+    width: 80px;
+    height: 80px;
+    background: blue;
+}
+
+.video-js { background: transparent !important;}
+.video-wrapper
+{
+    //les class tailwind sont strip à l'initialisation de videojs
+    video
+    {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        //position: absolute;
+    }
+
+   
+}
+.hero .video-wrapper video { position: absolute; }
+// .vjs-control-bar { display: none !important; }
+.player1-dimensions, .player2-dimensions, .player3-dimensions, .player4-dimensions { width: 100%; height: 100%;}
+
+.gradient
+{
+    background: radial-gradient(ellipse at center, transparent 0%, black 100%);
+    opacity: .5;
+}
+
+.menu_overlay
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+
+    &.is-visible 
+    {
+        opacity: .5;
+        visibility: visible;
+        transition: all .2s;
+    }
+}
+
+footer
+{
+    height: 100vh;
+    background:#202124;
+}

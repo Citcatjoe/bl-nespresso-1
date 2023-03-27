@@ -1,0 +1,474 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html lang="fr" class="h-full"> 
+	<head>
+		<script src="https://cdn.tailwindcss.com"></script>  
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+
+		{# <?php include 'hb_card_tp.php'; ?> #}
+		{{ block('head_brand') }}
+	</head>
+
+	<body class="bg-gray-200 h-full"> 
+		
+		<!-- {{ block('loading_overlay') }} -->
+		{{ block('gtm') }}
+		{{ block('header') }}
+		{{ block('menu_overlay') }}
+		{# <?php include 'hb_header_tp.php'; ?> #} 
+		
+		<div class="hero container flex max-w-screen-2xl relative">
+			<div class="gradient absolute w-full h-full <!--bg-black opacity-40--> z-10"></div>
+			<div class="txtcontainer  container max-w-4xl absolute  z-10 left-1/2 -translate-x-1/2 bottom-16 md:bottom-1/2 translate-y-0 md:translate-y-1/2">
+				<h1 class="text-center text-white pb-2 md:pb-6"><span class="part1">Mort</span><br><span class="part2">Subite</span></h1>
+				<h2 class="w-full text-center text-white text-xl md:text-3xl">Le hockey<br>jusqu’à l’épuisement</h1>
+				{{ block('scroller') }}
+			</div>  
+			 
+			<div class="video-wrapper w-full relative" style="display:flex;justify-content:center;">    
+				<video preload="metadata" preload="auto" id="player1" playsinline autoplay muted class="" type="video/mp4">
+					<source src="https://player.vimeo.com/progressive_redirect/playback/807463297/rendition/720p/file.mp4?loc=external&signature=c095205781ec89930ee3b096785bb6b0be7c493294269451957baedbe55ce3ff" type="video/mp4"/>
+					Video not supported.
+				</video>
+			</div>
+		</div>
+		
+		{# ------------------------------------------------------------------------ #}
+		{# HERO 50/50 #}
+		{# <div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
+			<div class=" w-full md:w-1/2">
+				<figure class="w-full h-full float-right bg-bottom bg-cover contrast-125" style="background-image:url('img/this/1/_f2_8580.jpg');">
+				</figure>
+			</div>
+			<div class="herogradient w-full md:w-1/2 px-4 md:px-12 pt-8 md:pt-28 pb-8 md:pb-12">
+				<div class="">
+					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-6 md:mb-10 ">Je suis allé faire tester de la drogue</h1>
+					<div class="container authors flex py-4 border-y border-gray-400">
+						<div class="author w-40">
+							<a target="_blank" href="https://www.blick.ch/fr/auteurs/amit-juillard-journaliste-blick-id16519941.html" class="flex items-center">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold underline">Amit Juillard</span><br>
+									<span class="inline-block">Texte</span>
+								</div>
+							</a>
+						</div>
+						<div class="author w-48">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold">Valentin Flauraud</span><br>
+									<span class="inline-block">Photographie</span>
+								</div>
+						</div>
+						<div class="author w-48">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold">César Greppin</span><br>
+									<span class="inline-block">Format web</span>
+								</div>
+						</div>
+						
+					</div>
+					<h2 class="text-xl md:text-2xl mt-6 md:mt-10">Pour la première fois, un consommateur, un drug-checking et le labo toxicologique des Hôpitaux universitaires de Genève ont laissé un journaliste suivre des échantillons de MDMA et de coke à la trace.
+					</h2>
+					{{ block('social') }}
+				</div>
+			</div>
+		</div> #}
+		{# ------------------------------------------------------------------------ #}
+
+		{# ------------------------------------------------------------------------ #}
+		{# GROSSE CITATION#}
+		{# <blockquote class="mt-12 mb-12 border-l-4 border-black pl-4 block">
+			<span class="text-4xl font-semibold leading-normal bg-amber-100">« Passer pour un idiot aux yeux d'un imbécile est une volupté de fin gourmet »</span>
+			<span class="mt-4 block text-left font-semibold">— Jacques Chirac, Président de la République</span>
+		</blockquote> #}
+		{# ------------------------------------------------------------------------ #}
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
+			<div class="chapeau container py-8 max-w-2xl">
+				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Ce mardi soir, les play-off de National League vont commencer avec leur lot de matches à rallonge. Depuis plusieurs années, les rencontres se jouent sur le principe de la mort subite. Deux matches de légende ont marqué le championnat de Suisse. On se replonge dans ces soirées hors normes avec les acteurs principaux.
+				</h2>
+			</div>            
+			{{ block('authors') }}
+			<section>
+				<div class="container pt-8 pb-4 max-w-2xl">
+					<p class="lettrine text-lg font-light mb-6">«Ce soir-là, je n’avais qu’une envie. Que quelqu’un marque. Cela aurait pu être n’importe qui. Moi, un joueur de mon équipe ou un adversaire, peu importe. Tout le monde voulait rentrer à la maison. Par chance, le calvaire s’est terminé.» La confidence vient d’un acteur du plus long match de l’histoire du championnat de Suisse. «Ne cite pas mon nom», tient-il à préciser. Mais notre interlocuteur se souvient encore comme si c’était hier de ces 21 et 22 mars 2019. Il était 00h54 au moment du but décisif et le match avait commencé depuis bientôt cinq heures.
+					</p>
+					<p class="text-lg font-light mb-10 md:mb-16">Particularité des play-off, les prolongations se jouent jusqu’à ce que mort subite s’ensuive. Tant qu’aucune équipe n’a marqué, la rencontre se poursuit. Inlassablement. À mesure que les minutes s’écoulent, les rencontres entrent dans une autre dimension. Une réalité alternative où chaque petit geste anodin répété 10'000 fois à l’entraînement devient une épreuve. Chaque décision peut avoir une conséquence démesurée. Pour ce reportage au long cours, plusieurs acteurs de deux matches de légende ont été convoqués. Si tous n’avouent pas avoir gardé un bon souvenir de ces soirées hors normes, ils ne sont pas près de l’oublier. On se replonge dans deux morceaux de bravoure: Fribourg - Lausanne (2022) et Genève - Berne (2019).</p>
+					<div class="grid md:grid-cols-2 gap-4 md:gap-8">
+						<a href="#match1" class="hover:-translate-y-1">
+							<div class="text-center bg-gray-200 px-4 py-8 -ml-0 lg:-ml-16 xl:-ml-32">
+								<span class="text-sm font-normal uppercase block mb-2">Match 1</span>
+								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-fribourg.png" alt="pictogramme Fribourg Gottéron" class="w-10 float-left mr-2">Fribourg - Lausanne<img src="img/this/picto-lausanne.png" alt="Pictrogramme Lausanne HC" class="w-10 float-right ml-2"></span>
+								<span class="block text-lg">29 mars 2022. 3-2 ap.</span>
+							</div>
+						</a>
+						<a href="#match2" class="hover:-translate-y-1">
+							<div class="text-center bg-gray-200 px-4 py-8 -mr-0 lg:-mr-16 xl:-mr-32">
+								<span class="text-sm font-normal uppercase block mb-2">Match 2</span>
+								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-geneve.png" alt="Pictrogramme SC Genève" class="w-10 float-left mr-2">Genève - Berne<img src="img/this/picto-berne.png" alt="Pictrogramme HC Berne" class="w-10 float-right ml-2"></span>
+								<span class="block text-lg">21 mars 2019. 2-3 ap.</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- CHAPITRE 1 -->
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
+			<figure class="title -ml-4 -mr-4" id="match1">
+				<img src="img/this/match1desktop.png" alt="Image confrontation Fribourg Lausanne desktop" class="mobile-hidden">
+				<img src="img/this/match1mobile.png" alt="Image confrontation Fribourg Lausanne mobile" class="desktop-hidden">
+				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+			</figure>
+			<section>
+				<div class="container py-4 max-w-2xl">
+					<!-- <h2 class="text-7xl">Chapitre 1</h2> -->
+					<!-- <figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/test.png" alt="">
+							</div>
+						</div>
+					</figure> -->
+					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre I — Chez le consommateur en chaussettes blanches</h3> -->
+					<div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+						<div class="author w-full">
+								<div class="align-text-bottom text-sm md:text-base">
+									<span class="inline-block font-extrabold uppercase">104’58'' de suspense à la BCF Arena</span>
+									<!-- <span class="inline-block">Texte</span> -->
+								</div>
+						</div>
+					</div>
+					<p class="lettrine text-lg font-light mb-6">Ils étaient environ 9000 au coup d’envoi de cette rencontre, à 20h. Combien étaient-ils à 00h24 pour admirer le solo de Philippe Furrer qui a donné la victoire à Fribourg Gottéron face au Lausanne HC? «Tous diront qu’ils étaient là», a souri le défenseur buteur. Mais il est vrai que cette soirée hors du commun a mis dans l’embarras bien des gens. Personne ne l’avouera, mais ils sont nombreux à avoir pris le dernier train ou le dernier bus.
+					</p>
+					<p class="text-lg font-light mb-6">«J’ai marqué le but décisif, mais j’ai reçu beaucoup de messages pour m’engueuler. À cause de nous, beaucoup d’amis ont dû rentrer à la maison à pied.» Philippe Furrer a réalisé un solo d’anthologie, mais n’a pas été épargné par les remarques. «Je vous rassure, j’ai eu davantage de félicitations», rigole le tout jeune retraité.
+					</p>
+					<!-- <blockquote class="mt-12 mb-12 border-l-4 border-black pl-4 block">
+						<span class="text-4xl font-semibold leading-normal bg-amber-100">« Passer pour un idiot aux yeux d'un imbécile est une volupté de fin gourmet »</span>
+						<span class="mt-4 block text-left font-semibold">— Jacques Chirac, Président de la République</span>
+					</blockquote> -->
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
+						<div class="container">
+							<div class="w-full">
+								<img src="img/this/quote-furrer.png" alt="Citation de Furrer">
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Face au Lausanne HC, le vétéran avait perforé toute la défense pour tromper Luca Boltshauser entre les jambes. Une délivrance pour les spectateurs de la BCF Arena à minuit passé de 24 minutes. «Ce qui m’en reste aujourd’hui? Le même goût que l’un des titres que j’ai gagnés. Oui, nous avons été éliminés en demi-finale par la suite face à Zurich. Mais cette soirée est gravée dans ma mémoire.»
+					</p>	
+					<p class="text-lg font-light mb-6">En plus de deux décennies de carrière, Philippe Furrer a vécu beaucoup de choses. Et pourtant, ce jour de mars 2022 l’a marqué. «Je n’ai rien vécu de comparable à cette soirée. Ce que je préfère, ce sont les histoires que les gens ont pu raconter à leurs proches. Chacun a vécu ce match à sa façon. Moi, par exemple, si je ne dois me souvenir que d’un détail, c’est ce bruit incroyable au moment où le puck termine sa course dans le but de Lausanne. À chaque fois que j’y repense, cela me rappelle ce sentiment de joie profonde. Cette communion entre les joueurs sur la glace et avec le public. Nous avons vraiment vécu quelque chose de spécial. Si nous remportons cette série face à Lausanne, c’est parce que nous avons trouvé un moyen de remporter ce match fou.»
+					</p>
+					
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container">
+							<div class="w-full">
+								<img src="img/this/photo1.jpg" alt="Images de Chris DiDomenico et Philippe Furrer">
+								<figcaption class="py-2 text-xs">Chris DiDomenico (à g.) et Philippe Furrer fêtent le but décisif.</figcaption>
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Ce soir-là, dans les travées de la BCF Arena, tout le monde y allait de son pronostic. Qui allait être le héros de cette soirée sans fin? Forcément, les noms du Fribourgeois Chris DiDomenico ou du Lausannois Jiri Sekac étaient les plus fréquemment cités. «Je pense bien qu’on ne me citait pas forcément», a rigolé Philippe Furrer. En 2016 pourtant, il avait déjà marqué un penalty décisif en prolongation qui avait permis à Lugano d’éliminer Genève-Servette. «Ce sont des soirées irrationnelles et ce n’est finalement pas illogique que le but ne vienne pas de celui qui est le plus attendu et donc le plus surveillé.»
+					</p>
+					<p class="text-lg font-light mb-6">Cette réussite face à Lausanne, parlons-en, justement. Le défenseur peut le raconter seconde par seconde: «Je l’ai revue tellement de fois (rires). J’ai attendu une opportunité durant toutes les prolongations. Il fallait trouver le bon moment, celui durant lequel je pourrais aller de l’avant. Je me suis dit que si une chance se présentait, j’allais tout faire pour essayer quelque chose.»
+					</p>
+					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
+						<video controls preload="auto" id="player2" playsinline autoplay muted loop class="video-js">
+							<source src="https://player.vimeo.com/progressive_redirect/playback/807497861/rendition/720p/file.mp4?loc=external&signature=80a9f088ec1c02b3c5247b0a11571b56fdeb24169e9eeb87d1934b081fa7e0fa" type="video/mp4"/>
+							Video not supported.
+						</video>
+					</div>
+					<p class="text-lg font-light mb-6">Un puck perdu et un dribble plus tard, le No 5 a pu loger la rondelle entre les jambes de Luca Boltshauser. «Cette feinte avait de bonnes chances de passer, car c’est difficile pour un adversaire de défendre sans faire de faute, analyse-t-il. Genazzi voulait bloquer le shoot et j’avais donc vraiment la place pour tenter quelque chose. Ensuite, tout s’est passé comme prévu et c’était magnifique. Mais c’est surtout une question d’état d’esprit. J’avais le droit de tenter quelque chose.»
+						
+					</p>
+					<p class="text-lg font-light mb-6">Encore fallait-il oser. «Cette mentalité a pu faire parfois défaut du côté de Fribourg, précise Philippe Furrer. Les gens sont ambitieux, mais sont-ils convaincus de pouvoir gagner? Ce sont des matches comme celui-ci qui permettent à un club de franchir des étapes. Prenez l’exemple de Zoug. Ils ne sont pas devenus du jour au lendemain une machine à gagner. Cela se fait par étapes. Ils ont décidé il y a 7 ou 8 ans qu’un jour, ils allaient gagner le titre. J’espère que Fribourg saura s’en inspirer.»
+					</p>
+					<p class="text-lg font-light mb-6">L’autre vestiaire, celui de Lausanne, a sonné creux après ce coup du sort. Un mélange de fatigue intense et de déception plus grande encore dont se souvient encore parfaitement Christoph Bertschy, ancien joueur du LHC passé aujourd’hui à Fribourg: «Après un match normal, tu es déjà épuisé… Là, nous avons dû ressortir trois fois du vestiaire après les 60 minutes réglementaires. C’était à chaque fois terriblement difficile de redémarrer le moteur. Tu vois que tout le monde est fatigué sur le banc d’en face et cela te donne un peu d’énergie, mais mentalement, c’est vraiment difficile.»
+					</p>
+					<blockquote class="mt-12 mb-10 border-l-8 bg-gray-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal border-gray-400">
+						<div class="flex pb-8 mb-8 border-b-2">
+							<div>
+								<h3 class="text-3xl md:text-5xl mb-2">«Ce match a laissé énormément de traces»</h3>
+								<p class="not-italic font-light text-xl md:text-2xl">Joël Genazzi (Lausanne HC)</p>	
+							</div>
+							<figure class="<!--w-1/3 float-right--> w-8/12 md:w-1/3">
+								<div class="container">
+									<div class="w-full">
+										<img src="img/this/medaillon-genazzi2.jpg" alt="Portrait de Joel Genazzi" class="rounded-full">
+										<!-- <figcaption class="py-2 px-2 text-xs font-normal"><b>Joël Genazzi</b>, joueur du Lausanne HC</figcaption> -->
+									</div>
+								</div>
+							</figure>
+						</div>
+						<span class="opacity-70 block mb-4"><b class="not-italic underline">Grégory Beaud</b> – Joël Genazzi, tu étais l’un des joueurs avec le plus de temps de glace lors de ce match à Fribourg (41'07). Quels sont les souvenirs un an après?</span>
+						<span class="opacity-50 block mb-4"><b class="not-italic underline">Joël Genazzi</b> – Une image me vient immédiatement en tête. Durant la pause avant la troisième prolongation, j’étais assis à ma place avec Christoph Bertschy à côté de moi. Tout le monde était très excité. Lui, pas du tout. Il était couché au sol avec les jambes surélevées pour tenter de faire circuler le sang. Il n’avait jamais fait ça. Moi non plus. Il avait l’air tellement tranquille que j’ai essayé aussi... C’était une catastrophe (rires). Plus jamais!</span>
+						<span class="opacity-70 block mb-4">– Christoph Bertschy, justement, m’a parlé de pénurie de ravitaillement. Tu as vécu cela comment?
+						</span>
+						<span class="opacity-50 block mb-4">– Je me prépare toujours des smoothies protéinés. En fin de soirée, je n’avais plus rien du tout. Cette soirée, Justin Krueger (ndlr ancien joueur du club et désormais dirigeant) est devenu une légende pour moi et mes coéquipiers (rires). Je ne sais pas comment il a fait, mais il avait plein de trucs à manger. Bananes, barres de céréales. Un vrai magasin. Il n’a pas joué une seule seconde du match, mais il a nourri tout le monde.
+						</span>
+						<span class="opacity-70 block mb-4">– Physiquement, comment tu as vécu cette soirée?
+						</span>
+						<span class="opacity-50 block mb-4">– Comme une expérience intéressante. Le plus dur, c’était de reprendre après les pauses. Je pouvais à peine plier les jambes. Mais il ne fallait pas le montrer aux Fribourgeois. Ils étaient probablement bien émoussés également. Alors je faisais comme si tout allait bien. Après notre retour à Lausanne, toute l’équipe est allée prendre un bain gelé pour tenter de récupérer au mieux. Le lendemain, j’avais énormément de courbatures. Je n’ai pas remis mes patins avant le match d’après. Et je me suis blessé. Ce n’est probablement pas un hasard. Cette soirée m’a laissé énormément de traces.
+						</span>
+						<span class="opacity-70 block mb-4">– Sur le but décisif, tu te fais coucher par Philippe Furrer. Tu peux m’expliquer cette scène?
+						</span>
+						<span class="opacity-50 block mb-4">– Je ne pensais jamais qu’il allait pouvoir faire ça. Je suis sûr que personne ne le pensait d’ailleurs. Notre gardien, Luca Boltshauser se fait également abuser par une feinte. Il a vraiment fait un sacré truc. Je me couche pour bloquer son shoot et il me tourne autour. Peu avant, c’est moi qui perds le puck sur une passe vers un attaquant. De toute façon, il fallait une erreur pour que le match se termine.
+						</span>
+						<span class="opacity-70 block mb-4">– Cela se passe comment après une telle scène?
+						</span>
+						<span class="opacity-50 block mb-4">– Tout de suite après le match, on me voit en gros plan avec Glausi (ndlr Andreas Glauser). Je pense qu’il me dit que ce n’est pas grave pour mon erreur. Et on tente directement de passer à autre chose. On m’a demandé d’aller à l’interview. Je n’en ai pas été capable. J’ai mangé avec mon équipement. Je ne me rendais pas compte d’avoir joué plus de 40 minutes. Je savais juste que je n’avais plus de forces. Et puis j’ai pensé aux fans aussi. Ils ont dû passer une sacrée soirée.
+						</span>
+					</blockquote>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+						<div class="pt-4 grid gap-4 md:grid-cols-2">
+							<div class="">
+								<img src="img/this/photoxx.jpg" alt="La joue des joueurs de Fribourg Gottéron">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/photo2.jpg" alt="La détresse des joueurs de Lausanne HC">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs">La joie des joueurs de Fribourg Gottéron (en noir) contraste avec la détresse des Lausannois.
+						</figcaption>
+					</figure>
+					<p class="text-lg font-light mb-6">Le but en question, Christoph Bertschy ne s’en souvient plus très bien. «Je ne sais pas si je l’ai vu de mes propres yeux ou sur l’écran au ralenti, tente-t-il de se remémorer. Je sortais de la glace et je tentais déjà de retrouver mon souffle. Et tout à coup, il y a eu ce bruit. Sur le moment, c’est très difficile. Ce n’est pas ce soir-là que nous perdons la série, mais nous avons pris un gros coup sur la tête.»
+					</p>
+					<p class="text-lg font-light mb-6">Plus dur encore, l’action décisive a impliqué son pote Joël Genazzi, un pilier du LHC au même titre que lui. Dans ces instants, les mots ont peu d’importance. «Sur le moment, ça me fait évidemment chier. Mais je sais que pour lui, c’est bien pire. C’est un de nos leaders et nous devons être là pour lui. Tout le monde est déçu et nous devons trouver un moyen de nous remobiliser, car la série n’est pas terminée. En ce qui concerne Joël, que peut-on lui reprocher? Rien. Cela aurait pu arriver à tout le monde.»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
+						<div class="container">
+							<div class="w-full">
+								<img src="img/this/quote-bertschy.png" alt="Citation de Bertschy">
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Christoph Bertschy n’a pas voulu revoir les images avant la fin de ces play-off. L’aspect cathartique ne lui parle pas. «Je pense qu’il est plus important de conserver des pensées positives afin de préparer le match suivant avec le maximum d’énergie. Ressasser ne servait à rien.» Cette défaite cruelle a eu raison du Lausanne HC qui ne s’est jamais relevé et a perdu les deux derniers matches du quart de finale. Le cinquième acte a été une nouvelle fois décidé en prolongation. «J’ai encore ce dénouement en travers de la gorge, même si désormais, je joue pour Fribourg. On ne savait plus que faire contre le power-play et ce soir-là, ils nous ont fait très mal.»
+					</p>
+					<p class="text-lg font-light mb-6">Et comment s’est passé l’accueil dans le vestiaire qui, ce 29 mars 2022 a chaviré? «Très bien, rigole-t-il. Nous avons surtout parlé de nos expériences respectives. Comment les uns et les autres ont vécu ce match. Quand on y pense avec un peu de recul, c’est tout de même une situation assez drôle. Mais il m’a fallu pas mal de temps pour le voir de cette manière.»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/photo3.jpg" alt="Reto Berra à la fin du match">
+								<figcaption class="py-2 text-xs">Reto Berra ne s’attendait probablement pas à passer une soirée aussi longue. (Photo Adrien Perritaz)</figcaption>
+							</div>
+						</div>
+					</figure>
+					
+				</div>
+			</section>
+		</div>
+
+		<!-- CHAPITRE 2 -->
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-2 md:pb-12 md:pb-20 md:mb-24">
+			<!-- <h2 class="text-3xl">Match 1 : Victoire fribourgeoise après prolongations, 104 minutes et 58 secondes de jeu</h2> -->
+			<figure class="title -ml-4 -mr-4" id="match2">
+				<img src="img/this/match2desktop.png" alt="Image de la confrontation Genève Berne desktop" class="mobile-hidden">
+				<img src="img/this/match2mobile.png" alt="Image de la confrontation Genève Berne mobile" class="desktop-hidden">
+				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+			</figure>
+			<section>
+				<div class="container py-4 max-w-2xl">
+					<!-- <h2 class="text-7xl">Chapitre 1</h2> -->
+					<!-- <figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/test.png" alt="">
+							</div>
+						</div>
+					</figure> -->
+					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre I — Chez le consommateur en chaussettes blanches</h3> -->
+					<div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+						<div class="author w-full">
+								<div class="align-text-bottom text-sm md:text-base">
+									<span class="inline-block font-extrabold uppercase break-normal">
+										<!-- Fribourg - Lausanne: 117’43’'<br>
+										Buts&nbsp;12e&nbsp;Sprunger&nbsp;(5c3)&nbsp;1-0. 13e&nbsp;Desharnais&nbsp;(5c4)&nbsp;2-0. 27e Krakauskas&nbsp;2-1. 44e&nbsp;Bertschy&nbsp;2-2. 105e&nbsp;Furrer&nbsp;3-2. -->
+										Le match plus plus long de l’histoire: 117’43’'
+									</span>
+									<!-- <span class="inline-block">Texte</span> -->
+								</div>
+						</div>
+					</div>
+					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
+						<video controls preload="auto" id="player3" playsinline autoplay muted loop class="video-js">
+							<source src="https://player.vimeo.com/progressive_redirect/playback/807497992/rendition/720p/file.mp4?loc=external&signature=000fc8ad1dc5576a9bb060b5ccdeb2a752a7bddab4d1ac1fc4803411f0489b48" type="video/mp4"/>
+							<!-- <source src="https://www.youtube.com/embed/DdDnur3_Gk0" type="video/mp4"/> -->
+							Video not supported.
+						</video>
+					</div>
+					<p class="lettrine text-lg font-light mb-6">«En général, lorsque tu es éliminé, tu passes un moment avec tes coéquipiers pour souffrir ensemble en buvant un verre. Ce soir-là, je me suis retrouvé couché sur mon canapé au milieu de la nuit avec une bière à la main en fixant le plafond. C’est forcément dur d’être éliminé, mais j’étais vidé tant émotionnellement que physiquement». Cette rencontre entre Genève et Berne s’est terminée à 00h54, près de cinq heures après avoir commencé. Une éternité pour tous les acteurs dont Noah Rod, capitaine de Genève-Servette.
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
+						<div class="container">
+							<div class="w-full">
+								<img src="img/this/quote-rod.png" alt="Citation de Rod">
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Le plus dur dans ce revers? Ce but de Mark Arcobello a envoyé les Genevois en vacances. Quatre ans après la cruelle défaite au bout du suspense, le chef de meute grenat n’a pas digéré. La bière en solo en pleine nuit, probablement que oui. Cette soirée par contre… Le capitaine de Genève-Servette n’a pas aimé ce match à rallonge. «C’était nul», tranche-t-il.
+						
+					</p>
+					<p class="text-lg font-light mb-6">Et le fait que les Aigles l’aient perdu n’est pas la principale raison de cet arrière-goût amer. «Je penserais la même chose si nous avions gagné, insiste-t-il. Je me souviens surtout de deux équipes qui ne veulent pas jouer au hockey de peur de commettre une faute qui coûte le match.» Et c’est sur Mike Völlmin que le malheur s’est abattu à la suite d’un puck mal contrôlé.
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/photo4.jpg" alt="Robert Mayer concède le but décisif en fin de troisième prolongation">
+								<figcaption class="py-2 text-xs">Robert Mayer a concédé le but décisif en fin de troisième prolongation.</figcaption>
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Le défenseur qui évolue toujours aux Vernets n’a pas souhaité revenir sur ce match. Il s’est contenté d’avouer qu’il s’agit de la plus grosse erreur de sa carrière. Comme Joël Genazzi lors du match Fribourg - Lausanne, le No 52 a eu le mauvais rôle dans ce scénario totalement fou. «Je me souviens être allé vers lui pour tenter de le réconforter, poursuit Noah Rod. Je lui ai dit qu’il n’y pouvait rien et que cela aurait pu tomber sur n’importe qui et que personne ne lui en voulait. Mais ce n’est pas facile à admettre, je le comprends bien.»
+					</p>
+					<p class="text-lg font-light mb-6">Malgré cette défaite, Chris McSorley, coach du GSHC, n’a qu’un mot à la bouche: «Fierté». Le technicien ontarien a vécu une soirée particulière également. «À minuit pile, j’ai entendu le kop des Vernets commencer à chanter Joyeux Anniversaire pour Chris McSorley, se souvient Pascal Aeberhard, commentateur pour la chaîne MySports. Le speaker a ensuite annoncé sa fête au micro. C’était étrange, car la patinoire est tout à coup devenue très silencieuse pour ce moment. J’ai trouvé cela étonnant dans un premier temps avant de comprendre.»
+					</p>
+
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
+						<div class="container">
+							<div class="w-full">
+								<img src="img/this/quote-mcsorley.png" alt="Citation de Chrise McSorley">
+							</div>
+						</div>
+					</figure>
+
+					<p class="text-lg font-light mb-6">Le souvenir est vivace dans l’esprit du journaliste qui a tenu le crachoir durant plusieurs heures. «Si nous partions en quatrième prolongation, j’aurais terminé la soirée tout seul à l’antenne, a-t-il rigolé. Ils auraient fermé le studio à Rossens.»
+						
+					</p>
+					<p class="text-lg font-light mb-6">Par «chance», il n’a pas eu besoin d’éteindre la lumière en partant puisque la réussite décisive est intervenue à moins de trois minutes de la sixième pause. «Et comme beaucoup de monde, j’étais soulagé, poursuit-il. Fatigué, mais soulagé que cela s’arrête. Au bout d’un moment, tu n’as plus rien à dire d’autre que de parler du temps de jeu de chaque joueur.»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="pt-4 grid gap-4 md:grid-cols-2">
+							<div class="">
+								<img src="img/this/photomcsorley.jpg" alt="Image de Chris Mcsorley">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/photomcsorley2.jpg" alt="Image de Chrise McSorley">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs mb-6">Au cours du match, Chris McSorley sera passé par toutes les émotions</figcaption>
+					</figure>
+					<p class="text-lg font-light mb-6">Ce bouquet final est à l’image de Chris McSorley: haut en couleurs. Car avec l’Ontarien, on a l’impression que rien ne peut se passer normalement. «Lorsque le speaker n’a plus de voix en fin de soirée, tu sais que tu es en train de vivre quelque chose de spécial (rires).» Si aujourd’hui, il en sourit volontiers, le Canadien admet avoir eu besoin de temps pour se remettre de cette défaite. «Cette soirée, c’était comme un essorage, image-t-il. J’étais totalement vidé à la fin.»
+					</p>
+					<p class="text-lg font-light mb-6">Ce match a représenté la dernière apparition de Chris McSorley derrière le banc de l’équipe genevoise. «Vu ce qui était en train de se passer en coulisses, je me rendais bien compte que je ne serais pas de retour la saison suivante, nous a-t-il confié. Est-ce que j’aurais souhaité que cela se termine autrement? Évidemment. Mais j’ai dit aux gars qu’ils avaient tout donné et qu’ils n’avaient rien à se reprocher.»
+					</p>
+
+					<h2 class="text-2xl font-bold mt-4 md:mt-12 mb-4 md:mb-6">Classement des matches les plus longs de l’histoire du hockey suisse</h2>
+					<figure class="float-right mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/tableau.png" alt="Liste des matchs les plus longs du hockey suisse">
+								<!-- <figcaption class="py-2 text-xs">Sébastien se livre: «La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood.»</figcaption> -->
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Après une poignée de main avec Kari Jalonen, le coach vainqueur, Chris McSorley a disparu dans l’ombre, non sans avoir pris le temps de saluer une dernière fois la foule. «Les fans ont été fantastiques, et leur soutien a été merveilleux tout au long de ces années. J’ai tendance à dire que ce match est emblématique de la culture que nous avions voulu instaurer avec Louis (ndlr Matte, son assistant). Honnêtement, la seule chose la plus folle aurait été de gagner le titre pour mon dernier match avec Genève. Mais je me contente de ce souvenir indélébile.»
+					</p>
+					<p class="text-lg font-light mb-6">À 00h54, Mark Arcobello a libéré tout le monde. C’est finalement lui qui a trouvé la lucarne de Robert Mayer après avoir récupéré le puck mal négocié par Mike Völlmin. «Un moment immense dans ma carrière, s’enthousiasme celui qui évolue actuellement à Lugano. C’est de loin le plus long match professionnel auquel j’ai pris part. Je m’en souviendrai toute ma vie. Le puck était en l’air et je l’ai perdu de vue. Tout à coup, il est apparu comme par magie juste devant ma canne. J’ai tiré à l’instinct au-dessus du gant de Robert Mayer. Lorsque le filet tremble... Je ne sais même pas ce que j’ai pu ressentir. C’est indescriptible.»
+					</p>
+					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video"> 
+						<video controls preload="auto" id="player4" playsinline autoplay muted loop class="video-js">
+							<source src="https://player.vimeo.com/progressive_redirect/playback/807498021/rendition/720p/file.mp4?loc=external&signature=4f74386013dbd1a8c221b8d15a767ff95f404b3100bdf2b081ae86ccba7e94d7" type="video/mp4"/>
+							Video not supported.
+						</video>
+					</div>
+					
+
+					
+					<p class="text-lg font-light mb-6">Cette soirée hors du commun est, selon l’Américain, le fondement de ce qui a amené le club bernois au titre. «Cela nous a coûté une énergie folle pour gagner. Mais dans le même temps, cela nous a donné un coup de boost incroyable de nous en être sortis de la sorte. Comme nous avions gagné en six matches cette série, nous avions eu un jour de congé le lendemain. Je sais précisément ce que j’en ai fait: rien du tout (rires).» Quelques semaines plus tard, Berne devenait champion. «Si Genève remportait cette série, ils auraient pu aller au bout», détaille Mark Arcobello.
+					</p>
+					<p class="text-lg font-light mb-6">Les problèmes d’approvisionnement, comme à Fribourg, ont été conséquents du côté des visiteurs des Vernets. Mais pas pour le club local qui avait la chance de pouvoir compter sur le stock conséquent de vivres amassé par «Jimmy» Omer. Cela n’a pas rendu la situation facile pour autant. «Nous avions tout ce dont nous avions besoin, confirme Noah Rod. Mais comme tu n’as jamais vécu un truc pareil, tu ne sais pas ce que tu dois faire. Manger au risque d’avoir mal au ventre? Ne pas manger et ne plus avoir d’énergie? Je ne savais pas comment faire pour bien faire.» Mais il n’a pas appris grand-chose pour autant. «Je sais juste que tu es plus fatigué après deux matches dans la même journée qu’après un seul (rires).»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/photo5.jpg" alt="Mark Arcobello célèbre le but">
+								<figcaption class="py-2 text-xs">Au second plan, Mark Arcobello célèbre ce but qui qualifie Berne pour la demi-finale.</figcaption>
+							</div>
+						</div>
+					</figure>
+					
+					<p class="text-lg font-light mb-6">Les visiteurs, eux, ont dû parer au plus pressé. «Je sais qu’un membre du staff s’est tiré en vitesse dans une épicerie du coin pour tenter de trouver des choses à manger. On n’avait plus rien. En cette fin de troisième prolongation, je paniquais à l’idée de rentrer aux vestiaires pour un quart d’heure et de devoir revenir sur la glace sans rien n’avoir mangé. C’était vraiment un sentiment particulier à vivre.»
+					</p>
+					<p class="text-lg font-light mb-6">Dans la bouche de Mark Arcobello, le débit se fait de plus en plus rapide à mesure que les souvenirs semblent lui revenir à l’esprit. «À chaque fois que j’entrais sur la glace, il y avait ce mélange d’excitation et de stress. C’était à la fois angoissant, mais grisant. Je n’ai jamais vécu cela depuis. Je ne le vivrai probablement jamais plus d’ailleurs. Rendez-vous compte. Nous avons joué deux matches le même soir...»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/photo6.jpg" alt="La joie des Bernois est à la hauteur de la déception des fans genevois">
+								<figcaption class="py-2 text-xs">La joie des Bernois est à la hauteur de la déception des fans genevois.</figcaption>
+							</div>
+						</div>
+					</figure>
+					
+					<p class="text-lg font-light mb-6">Si Mark Arcobello a pu marquer ce but décisif, c’est en partie à Simon Moser qu’il le doit. Le No 21 des Ours a balancé le long puck en avant qui a mené à l’erreur fatale de Mike Völlmin. L’actuel capitaine du SCB a-t-il eu la même pensée que notre interlocuteur du début d’article? Voulait-il également que cela se termine coûte que coûte, peu importe qui marque? «Non quand même pas, coupe-t-il sèchement. Et je préfère ne pas savoir qui a dit ça (rires). J’espère que ce n’était pas quelqu’un de mon équipe.»
+					</p>
+				
+					
+					
+					
+					
+					
+				</div>
+			</section>
+		</div>
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20">
+			    
+
+			
+			<section>
+				<div class="container pt-2 pb-4 max-w-2xl">
+
+					<h2 class="text-2xl font-bold mt-4 md:mt-12 mb-4 md:mb-6">Est-ce bien raisonnable de disputer ces rencontres à rallonge? Non, ce n’est pas raisonnable</h2>
+					<p class="text-lg font-light mb-6">Avec le début des play-off, la question va inévitablement revenir sur le tapis. Comme à chaque occasion où une rencontre dépasse les 60 minutes réglementaires. Est-ce bien raisonnable de disputer ces rencontres à rallonge? Non, ce n’est pas raisonnable. Mais c’est justement pour cette raison précise qu’il ne faut surtout pas arrêter. Toutes les personnes sondées se souvenaient précisément de chacun de leurs faits et gestes ce soir-là. Chaque anecdote avait une importance démesurée.
+					</p>
+					
+					<p class="text-lg font-light mb-6">Les milliers de personnes présentes aux Vernets ou à la BCF Arena pour ces deux matches épiques garderont en tête cette magie à la fois éphémère et interminable. L’ambivalence entre la lassitude et la tension est un sentiment rare. Une anomalie dans un monde cadré. Minuté. Les vidéos TikTok ne durent que quelques secondes. Un épisode sur Netflix ne dure que rarement plus d’une heure. Les matches de tennis sont de plus en plus formatés pour être «télé-compatibles». Cet article est bien trop long (...). Mais en play-off, le temps peut n’avoir plus la moindre importance et qu’importe si le dernier bus est parti ou si le réveil du lendemain matin fera mal.
+					</p>
+					<p class="text-lg font-light mb-6">«Oui, cela me fait encore de la peine aujourd’hui d’avoir perdu. Mais en même temps, je suis reconnaissant d’avoir eu la chance de vivre ce moment hors du temps.» La confession vient de Christoph Bertschy et l’ancien Lausannois évoluant aujourd’hui à Fribourg a parfaitement résumé tout ce que représentent ces matches qui n’en finissent pas. Lorsque le hockey sur glace, sport aux apparences triviales, peut devenir philosophique. Comme une allégorie du temps sur lequel on peut, pour une fois, avoir un semblant d’emprise.
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/quote-moser.png" alt="Citation moser">
+							</div>
+						</div>
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<footer class="container py-8 max-w-full relative">   
+			<div class="w-80 top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 absolute">
+				{{ block('credits') }}  
+			</div>
+		</footer> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		{# <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> #}
+		<script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<!-- <script src="js/yt.js"></script> -->
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+		<!-- <script src="js/plugins.js"></script> -->
+		<script src="js/header.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/intro.js"></script>
+		<!-- <script src="js/headroom.min.js"></script> -->
+		
+
+		 
+	</body>
+</html>

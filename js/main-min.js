@@ -1,0 +1,1 @@
+!function($){window.scrollTo(0,0),setTimeout((function(){$("body").addClass("is-visible"),window.scrollTo(0,0)}),1e3),videojs("player1",{autoplay:!0}),videojs("player2",{autoplay:!0}),videojs("player3",{autoplay:!0}),videojs("player4",{autoplay:!0})}(jQuery);
