@@ -1980,12 +1980,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_focus.jpg" : {
+    "\/img\/this\/_focus.jpg" : {
       "ft" : 16384,
       "iS" : 389117,
       "jF" : 0,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_focus.jpg",
+      "oAP" : "\/img\/this\/_focus.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1993,11 +1993,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_machine.png" : {
+    "\/img\/this\/_machine.png" : {
       "ft" : 32768,
       "iS" : 1327516,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_machine.png",
+      "oAP" : "\/img\/this\/_machine.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2006,12 +2006,12 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_paysage-grains.jpg" : {
+    "\/img\/this\/_paysage-grains.jpg" : {
       "ft" : 16384,
       "iS" : 421896,
       "jF" : 0,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_paysage-grains.jpg",
+      "oAP" : "\/img\/this\/_paysage-grains.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2019,12 +2019,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_paysage-palmer.jpg" : {
+    "\/img\/this\/_paysage-palmer.jpg" : {
       "ft" : 16384,
       "iS" : 428653,
       "jF" : 0,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_paysage-palmer.jpg",
+      "oAP" : "\/img\/this\/_paysage-palmer.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2032,12 +2032,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_tasse-ciel.jpg" : {
+    "\/img\/this\/_tasse-ciel.jpg" : {
       "ft" : 16384,
       "iS" : 406635,
       "jF" : 0,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_tasse-ciel.jpg",
+      "oAP" : "\/img\/this\/_tasse-ciel.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2045,12 +2045,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/_usine.jpg" : {
+    "\/img\/this\/_usine.jpg" : {
       "ft" : 16384,
       "iS" : 255500,
       "jF" : 0,
       "oA" : 1,
-      "oAP" : "\/img\/this\/docs\/_usine.jpg",
+      "oAP" : "\/img\/this\/_usine.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2058,12 +2058,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/06_03_22_RICARDO_HEGENBART0114 (2).jpg" : {
+    "\/img\/this\/06_03_22_RICARDO_HEGENBART0114 (2).jpg" : {
       "ft" : 16384,
       "iS" : 21411675,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/06_03_22_RICARDO_HEGENBART0114 (2).jpg",
+      "oAP" : "\/img\/this\/06_03_22_RICARDO_HEGENBART0114 (2).jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2071,188 +2071,188 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/AI\/Nespresso_Wordmark_2021_CMYK_Black.ai" : {
+    "\/img\/this\/AI\/Nespresso_Wordmark_2021_CMYK_Black.ai" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/AI\/Nespresso_Wordmark_2021_CMYK_Black.ai",
+      "oAP" : "\/img\/this\/AI\/Nespresso_Wordmark_2021_CMYK_Black.ai",
       "oF" : 0
     },
-    "\/img\/this\/docs\/AI\/Nespresso_Wordmark_2021_CMYK_White.ai" : {
+    "\/img\/this\/AI\/Nespresso_Wordmark_2021_CMYK_White.ai" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/AI\/Nespresso_Wordmark_2021_CMYK_White.ai",
+      "oAP" : "\/img\/this\/AI\/Nespresso_Wordmark_2021_CMYK_White.ai",
       "oF" : 0
     },
-    "\/img\/this\/docs\/arrow.svg" : {
+    "\/img\/this\/arrow.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/arrow.svg",
+      "oAP" : "\/img\/this\/arrow.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/Communique_Le systeme de recyclage Nespresso a 30 ans.pdf" : {
+    "\/img\/this\/Communique_Le systeme de recyclage Nespresso a 30 ans.pdf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Communique_Le systeme de recyclage Nespresso a 30 ans.pdf",
+      "oAP" : "\/img\/this\/Communique_Le systeme de recyclage Nespresso a 30 ans.pdf",
       "oF" : 0
     },
-    "\/img\/this\/docs\/Communique_Nespresso obtient la certification B Corp™.pdf" : {
+    "\/img\/this\/Communique_Nespresso obtient la certification B Corp™.pdf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Communique_Nespresso obtient la certification B Corp™.pdf",
+      "oAP" : "\/img\/this\/Communique_Nespresso obtient la certification B Corp™.pdf",
       "oF" : 0
     },
-    "\/img\/this\/docs\/Communique_Nespresso_LCA Study.pdf" : {
+    "\/img\/this\/Communique_Nespresso_LCA Study.pdf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Communique_Nespresso_LCA Study.pdf",
+      "oAP" : "\/img\/this\/Communique_Nespresso_LCA Study.pdf",
       "oF" : 0
     },
-    "\/img\/this\/docs\/hero-img.png" : {
+    "\/img\/this\/hero-img.png" : {
       "ft" : 32768,
       "iS" : 1297814,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/hero-img.png",
+      "oAP" : "\/img\/this\/hero-img.png",
       "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/homebag.jpg" : {
+    "\/img\/this\/homebag.jpg" : {
       "ft" : 16384,
-      "iS" : 258385,
+      "iS" : 324994,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/homebag.jpg",
+      "oAP" : "\/img\/this\/homebag.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/icon-agronomist.svg" : {
+    "\/img\/this\/icon-agronomist.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-agronomist.svg",
+      "oAP" : "\/img\/this\/icon-agronomist.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-coins.svg" : {
+    "\/img\/this\/icon-coins.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-coins.svg",
+      "oAP" : "\/img\/this\/icon-coins.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-collect.svg" : {
+    "\/img\/this\/icon-collect.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-collect.svg",
+      "oAP" : "\/img\/this\/icon-collect.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-farmer.svg" : {
+    "\/img\/this\/icon-farmer.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-farmer.svg",
+      "oAP" : "\/img\/this\/icon-farmer.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-globe.svg" : {
+    "\/img\/this\/icon-globe.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-globe.svg",
+      "oAP" : "\/img\/this\/icon-globe.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-grains.svg" : {
+    "\/img\/this\/icon-grains.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-grains.svg",
+      "oAP" : "\/img\/this\/icon-grains.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-label.svg" : {
+    "\/img\/this\/icon-label.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-label.svg",
+      "oAP" : "\/img\/this\/icon-label.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-package.svg" : {
+    "\/img\/this\/icon-package.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-package.svg",
+      "oAP" : "\/img\/this\/icon-package.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-woman.svg" : {
+    "\/img\/this\/icon-woman.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-woman.svg",
+      "oAP" : "\/img\/this\/icon-woman.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/icon-wrench.svg" : {
+    "\/img\/this\/icon-wrench.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/icon-wrench.svg",
+      "oAP" : "\/img\/this\/icon-wrench.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/Infographic_B2C_DE.jpg" : {
+    "\/img\/this\/Infographic_B2C_DE.jpg" : {
       "ft" : 16384,
       "iS" : 316139,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Infographic_B2C_DE.jpg",
+      "oAP" : "\/img\/this\/Infographic_B2C_DE.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2260,12 +2260,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/Infographic_B2C_FR.jpg" : {
+    "\/img\/this\/Infographic_B2C_FR.jpg" : {
       "ft" : 16384,
       "iS" : 320726,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Infographic_B2C_FR.jpg",
+      "oAP" : "\/img\/this\/Infographic_B2C_FR.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2273,34 +2273,21 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/logo-nespresso-black.svg" : {
+    "\/img\/this\/logo-nespresso-black.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/logo-nespresso-black.svg",
+      "oAP" : "\/img\/this\/logo-nespresso-black.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/logo-nespresso-full-black.png" : {
+    "\/img\/this\/logo-nespresso-full-black.png" : {
       "ft" : 32768,
       "iS" : 18512,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/logo-nespresso-full-black.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/docs\/logo-relove.png" : {
-      "ft" : 32768,
-      "iS" : 4695,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/logo-relove.png",
+      "oAP" : "\/img\/this\/logo-nespresso-full-black.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2309,20 +2296,33 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/Nespresso_Monogram_2021_CMYK_White_on_Black.ai" : {
+    "\/img\/this\/logo-relove.png" : {
+      "ft" : 32768,
+      "iS" : 4695,
+      "oA" : 0,
+      "oAP" : "\/img\/this\/logo-relove.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/this\/Nespresso_Monogram_2021_CMYK_White_on_Black.ai" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/Nespresso_Monogram_2021_CMYK_White_on_Black.ai",
+      "oAP" : "\/img\/this\/Nespresso_Monogram_2021_CMYK_White_on_Black.ai",
       "oF" : 0
     },
-    "\/img\/this\/docs\/nespresso-basket.jpg" : {
+    "\/img\/this\/nespresso-basket.jpg" : {
       "ft" : 16384,
       "iS" : 156149,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/nespresso-basket.jpg",
+      "oAP" : "\/img\/this\/nespresso-basket.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2330,12 +2330,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/nespresso-landscape2.jpg" : {
+    "\/img\/this\/nespresso-landscape2.jpg" : {
       "ft" : 16384,
       "iS" : 365290,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/nespresso-landscape2.jpg",
+      "oAP" : "\/img\/this\/nespresso-landscape2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2343,12 +2343,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/nespresso-picking-square.jpg" : {
+    "\/img\/this\/nespresso-picking-square.jpg" : {
       "ft" : 16384,
       "iS" : 511920,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/nespresso-picking-square.jpg",
+      "oAP" : "\/img\/this\/nespresso-picking-square.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2356,25 +2356,25 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/nespresso-picking-square2.jpg" : {
+    "\/img\/this\/nespresso-picking-square2.jpg" : {
       "ft" : 16384,
       "iS" : 161670,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/nespresso-picking-square2.jpg",
+      "oAP" : "\/img\/this\/nespresso-picking-square2.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/nespresso-picking.jpg" : {
+    "\/img\/this\/nespresso-picking.jpg" : {
       "ft" : 16384,
       "iS" : 286352,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/nespresso-picking.jpg",
+      "oAP" : "\/img\/this\/nespresso-picking.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2382,11 +2382,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/this\/docs\/positive-cup-numbers-p38.png" : {
+    "\/img\/this\/positive-cup-numbers-p38.png" : {
       "ft" : 32768,
       "iS" : 75011,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/positive-cup-numbers-p38.png",
+      "oAP" : "\/img\/this\/positive-cup-numbers-p38.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2395,11 +2395,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/positive-cup-relove-schema-p43.png" : {
+    "\/img\/this\/positive-cup-relove-schema-p43.png" : {
       "ft" : 32768,
       "iS" : 96871,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/positive-cup-relove-schema-p43.png",
+      "oAP" : "\/img\/this\/positive-cup-relove-schema-p43.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2408,11 +2408,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/positive-cup-ruler-p11.png" : {
+    "\/img\/this\/positive-cup-ruler-p11.png" : {
       "ft" : 32768,
       "iS" : 84685,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/positive-cup-ruler-p11.png",
+      "oAP" : "\/img\/this\/positive-cup-ruler-p11.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2421,11 +2421,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/poster.png" : {
+    "\/img\/this\/poster.png" : {
       "ft" : 32768,
       "iS" : 326962,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/poster.png",
+      "oAP" : "\/img\/this\/poster.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -2434,417 +2434,53 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/this\/docs\/schema-ruler.svg" : {
+    "\/img\/this\/schema-ruler.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/schema-ruler.svg",
+      "oAP" : "\/img\/this\/schema-ruler.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/schema1.svg" : {
+    "\/img\/this\/schema1.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/img\/this\/docs\/schema1.svg",
+      "oAP" : "\/img\/this\/schema1.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/img\/this\/docs\/video-lca.mp4" : {
+    "\/img\/this\/video-lca.mp4" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/video-lca.mp4",
+      "oAP" : "\/img\/this\/video-lca.mp4",
       "oF" : 0
     },
-    "\/img\/this\/docs\/WW_ALL_B2C-OL_Sustainable Collection_Caran d Ache Fixpencil Packaging Capsule Cape Town Shadow_LAYERED_2021-0000.tif" : {
+    "\/img\/this\/WW_ALL_B2C-OL_Sustainable Collection_Caran d Ache Fixpencil Packaging Capsule Cape Town Shadow_LAYERED_2021-0000.tif" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/WW_ALL_B2C-OL_Sustainable Collection_Caran d Ache Fixpencil Packaging Capsule Cape Town Shadow_LAYERED_2021-0000.tif",
+      "oAP" : "\/img\/this\/WW_ALL_B2C-OL_Sustainable Collection_Caran d Ache Fixpencil Packaging Capsule Cape Town Shadow_LAYERED_2021-0000.tif",
       "oF" : 0
     },
-    "\/img\/this\/docs\/zeta.jpg" : {
+    "\/img\/this\/zeta.jpg" : {
       "ft" : 16384,
       "iS" : 129959,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/this\/docs\/zeta.jpg",
+      "oAP" : "\/img\/this\/zeta.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/graph1.png" : {
-      "ft" : 32768,
-      "iS" : 90034,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/graph1.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/graph2.png" : {
-      "ft" : 32768,
-      "iS" : 87769,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/graph2.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/match1desktop.png" : {
-      "ft" : 32768,
-      "iS" : 360387,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/match1desktop.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/match1mobile.png" : {
-      "ft" : 32768,
-      "iS" : 247248,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/match1mobile.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/match2desktop.png" : {
-      "ft" : 32768,
-      "iS" : 445494,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/match2desktop.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/match2mobile.png" : {
-      "ft" : 32768,
-      "iS" : 318225,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/match2mobile.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/medaillon-genazzi.jpg" : {
-      "ft" : 16384,
-      "iS" : 96044,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/medaillon-genazzi.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/medaillon-genazzi2.jpg" : {
-      "ft" : 16384,
-      "iS" : 45523,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/medaillon-genazzi2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo1.jpg" : {
-      "ft" : 16384,
-      "iS" : 234757,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo1.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo2.jpg" : {
-      "ft" : 16384,
-      "iS" : 263054,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo3.jpg" : {
-      "ft" : 16384,
-      "iS" : 118608,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo3.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo4.jpg" : {
-      "ft" : 16384,
-      "iS" : 188193,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo4.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo5.jpg" : {
-      "ft" : 16384,
-      "iS" : 193021,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo5.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photo6.jpg" : {
-      "ft" : 16384,
-      "iS" : 195704,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photo6.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photomcsorley.jpg" : {
-      "ft" : 16384,
-      "iS" : 320833,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photomcsorley.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photomcsorley2.jpg" : {
-      "ft" : 16384,
-      "iS" : 104577,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photomcsorley2.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/photoxx.jpg" : {
-      "ft" : 16384,
-      "iS" : 314573,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/photoxx.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/this\/picto-berne.png" : {
-      "ft" : 32768,
-      "iS" : 7309,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/picto-berne.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/picto-fribourg.png" : {
-      "ft" : 32768,
-      "iS" : 4580,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/picto-fribourg.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/picto-geneve.png" : {
-      "ft" : 32768,
-      "iS" : 9164,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/picto-geneve.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/picto-lausanne.png" : {
-      "ft" : 32768,
-      "iS" : 7522,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/picto-lausanne.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/quote-bertschy.png" : {
-      "ft" : 32768,
-      "iS" : 651768,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/quote-bertschy.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/quote-furrer.png" : {
-      "ft" : 32768,
-      "iS" : 781804,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/quote-furrer.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/quote-mcsorley.png" : {
-      "ft" : 32768,
-      "iS" : 639395,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/quote-mcsorley.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/quote-moser.png" : {
-      "ft" : 32768,
-      "iS" : 852760,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/quote-moser.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/quote-rod.png" : {
-      "ft" : 32768,
-      "iS" : 748200,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/quote-rod.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/tableau.png" : {
-      "ft" : 32768,
-      "iS" : 305106,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/tableau.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/this\/test.png" : {
-      "ft" : 32768,
-      "iS" : 200816,
-      "oA" : 0,
-      "oAP" : "\/img\/this\/test.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
       "rq" : 75
     },
     "\/index.html.twig" : {
