@@ -1,4 +1,5 @@
 /*Gerillass mixins*/
+/*Colors, fonts, z-index, breakpoints...*/
 .herogradient {
   background: linear-gradient(300deg, #ffb9d8, #e3a2f8, #9fc5ff, #d6f6ff);
   background-size: 180% 180%;
@@ -17,7 +18,7 @@
   }
 }
 .hero {
-  height: 70vh;
+  height: auto;
 }
 @media (min-width: 768px) {
   .hero {
@@ -36,22 +37,24 @@
 }
 
 h1 {
-  font-family: bebas neue;
-  font-size: 100px !important;
+  font-family: Playfair Display;
   line-height: 0.8;
 }
-@media (min-width: 768px) {
-  h1 {
-    font-size: 200px !important;
-  }
+h2 {
+  font-family: Playfair Display;
+  font-weight: 300;
 }
 
-h2 {
+.chapeau h2 {
   font-family: poppins;
 }
 
 h3 {
-  font-family: bebas neue;
+  font-family: Poppins;
+}
+
+h4 {
+  font-family: Playfair Display;
 }
 
 p {
@@ -65,6 +68,10 @@ blockquote {
   border-right: 0;
 }
 
+.poppins {
+  font-family: Poppins;
+}
+
 .lettrine:first-letter {
   font-size: 570%;
   font-weight: 600;
@@ -72,6 +79,10 @@ blockquote {
   margin-top: 5px;
   line-height: 0.7;
   margin-right: 10px;
+}
+
+ul {
+  font-family: Poppins;
 }
 
 .share {
@@ -90,6 +101,9 @@ header.neg {
 header.neg.headroom--not-top {
   background: rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
+}
+header.trans {
+  background: transparent;
 }
 header.headroom--unpinned {
   transform: translateY(-100%);
@@ -206,6 +220,10 @@ header.headroom--unpinned {
   height: 100%;
 }
 
+.hero {
+  background: transparent;
+}
+
 .hero .video-wrapper video {
   position: absolute;
 }
@@ -231,9 +249,66 @@ header.headroom--unpinned {
   transition: all 0.2s;
 }
 
+.heading {
+  background: #A7A879;
+}
+
+.anim {
+  background: #FFFBED;
+}
+
 footer {
   height: 100vh;
   background: #202124;
+}
+
+.frame {
+  background: #A7A879;
+}
+
+.hero figure {
+  background: transparent;
+}
+
+figure ul {
+  border-left: 40px solid #A7A879;
+  font-weight: 300;
+}
+figure ul li {
+  padding-left: 40px;
+}
+
+.color {
+  background: #F2F2EA;
+}
+
+.parallax {
+  aspect-ratio: 16/8;
+}
+
+#parallax1 .parallax-bg {
+  height: 200%;
+  top: -100%;
+}
+
+#parallax2 .parallax-bg {
+  height: 200%;
+  top: -100%;
+}
+
+#parallax3 .parallax-bg {
+  height: 200%;
+  top: -100%;
+}
+
+#parallax4 .parallax-bg {
+  height: 200%;
+  top: -100%;
+}
+
+#parallax5 .parallax-bg {
+  height: 200%;
+  top: -100%;
 }
 
 .scroller {
@@ -446,6 +521,10 @@ footer {
     color: #ffffff;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   opacity: 0;
   visibility: hidden;
@@ -482,3 +561,5 @@ body.is-visible {
     display: none;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

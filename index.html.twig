@@ -2,55 +2,72 @@
 
 <!DOCTYPE HTML>
 
-<html lang="fr" class="h-full"> 
+<html lang="fr" class="h-full relative"> 
 	<head>
 		<script src="https://cdn.tailwindcss.com"></script>  
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
 
 		{# <?php include 'hb_card_tp.php'; ?> #}
 		{{ block('head_brand') }}
+		
 	</head>
-
-	<body class="bg-gray-200 h-full"> 
+	{{ block('frame') }}
+	<body class="bg-white h-full"> 
 		
 		<!-- {{ block('loading_overlay') }} -->
 		{{ block('gtm') }}
+		
 		{{ block('header') }}
 		{{ block('menu_overlay') }}
 		{# <?php include 'hb_header_tp.php'; ?> #} 
 		
-		<div class="hero container flex max-w-screen-2xl relative">
+		{#<div class="hero container flex max-w-screen-2xl relative">
 			<div class="gradient absolute w-full h-full <!--bg-black opacity-40--> z-10"></div>
-			<div class="txtcontainer  container max-w-4xl absolute  z-10 left-1/2 -translate-x-1/2 bottom-16 md:bottom-1/2 translate-y-0 md:translate-y-1/2">
-				<h1 class="text-center text-white pb-2 md:pb-6"><span class="part1">Mort</span><br><span class="part2">Subite</span></h1>
-				<h2 class="w-full text-center text-white text-xl md:text-3xl">Le hockey<br>jusqu’à l’épuisement</h1>
+			<div class="txtcontainer  container max-w-4xl absolute z-10 left-1/2 -translate-x-1/2 bottom-16 md:bottom-1/2 translate-y-0 md:translate-y-1/2">
+				<h1 class="text-center text-white pb-2 md:pb-6">Durable, le café en capsules?</h1>
+				<h3 class="w-full text-center text-white text-xl md:text-3xl">Les études le prouvent</h3>
 				{{ block('scroller') }}
 			</div>  
-			 
-			<div class="video-wrapper w-full relative" style="display:flex;justify-content:center;">    
-				<video preload="metadata" preload="auto" id="player1" playsinline autoplay muted class="" type="video/mp4">
-					<source src="https://player.vimeo.com/progressive_redirect/playback/807463297/rendition/720p/file.mp4?loc=external&signature=c095205781ec89930ee3b096785bb6b0be7c493294269451957baedbe55ce3ff" type="video/mp4"/>
-					Video not supported.
-				</video>
+		</div>#}
+
+		{# ------------------------------------------------------------------------ #}
+		{# HERO 50/50 NOT BOXED #}
+		<div style="background: transparent linear-gradient(60deg, #C4C5A8 0%, #E3E3D8 100%) 0% 0% no-repeat padding-box;">
+		<div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
+			<div class=" w-full md:w-1/2">
+				<figure class="w-full h-full float-right bg-bottom bg-cover relative pt-12 md:pt-0 pb-6 md:pb-0">
+					<img src="img/this/docs/hero-img.png" alt="Image d'illustration, Nespresso durable" class="mx-auto md:left-0 w-4/6 md:w-4/6 md:absolute md:top-1/2 md:-translate-y-1/2">
+				</figure>
+			</div>
+			<div class="w-full md:w-1/2 relative">
+				<div class="md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-5/6 pl-4 md:pl-8 pr-4 md:pr-0 text-center md:text-left">
+					<h3 class="w-full text-lg md:text-xl mb-2 md:mb-8 font-light">Impact environnemental</h3>
+					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-8 md:mb-10">Le café en capsules serait plus durable qu'on le pense</h1>
+					
+					{{ block('sponsor_bar') }}
+				</div>
 			</div>
 		</div>
+		</div>
+		{# ------------------------------------------------------------------------ #}
 		
 		{# ------------------------------------------------------------------------ #}
-		{# HERO 50/50 #}
-		{# <div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
+		{# HERO 50/50 BOXED #}
+		{#  <div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
 			<div class=" w-full md:w-1/2">
 				<figure class="w-full h-full float-right bg-bottom bg-cover contrast-125" style="background-image:url('img/this/1/_f2_8580.jpg');">
 				</figure>
 			</div>
-			<div class="herogradient w-full md:w-1/2 px-4 md:px-12 pt-8 md:pt-28 pb-8 md:pb-12">
+			<div class="bg-amber-200 w-full md:w-1/2 px-4 md:px-12 pt-8 md:pt-28 pb-8 md:pb-12">
 				<div class="">
-					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-6 md:mb-10 ">Je suis allé faire tester de la drogue</h1>
+					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-6 md:mb-10 ">Durable, le café en capsules?</h1>
 					<div class="container authors flex py-4 border-y border-gray-400">
 						<div class="author w-40">
 							<a target="_blank" href="https://www.blick.ch/fr/auteurs/amit-juillard-journaliste-blick-id16519941.html" class="flex items-center">
@@ -79,7 +96,7 @@
 					{{ block('social') }}
 				</div>
 			</div>
-		</div> #}
+		</div>#}
 		{# ------------------------------------------------------------------------ #}
 
 		{# ------------------------------------------------------------------------ #}
@@ -90,365 +107,607 @@
 		</blockquote> #}
 		{# ------------------------------------------------------------------------ #}
 
-		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
+		<div class="container max-w-screen-2xl px-4 relative bg-white">
 			<div class="chapeau container py-8 max-w-2xl">
-				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Ce mardi soir, les play-off de National League vont commencer avec leur lot de matches à rallonge. Depuis plusieurs années, les rencontres se jouent sur le principe de la mort subite. Deux matches de légende ont marqué le championnat de Suisse. On se replonge dans ces soirées hors normes avec les acteurs principaux.
+				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Quel est l’impact réel d’une tasse de café? Une étude indépendante montre que le café portionné a une empreinte carbone réduite par rapport à la plupart des machines automatiques à grains. La durabilité d’une tasse de café dépend de tout son cycle, de la culture de la plante à la fin de vie d’une capsule. Une approche holistique ancrée dans l’ADN de Nespresso.
 				</h2>
 			</div>            
-			{{ block('authors') }}
-			<section>
-				<div class="container pt-8 pb-4 max-w-2xl">
-					<p class="lettrine text-lg font-light mb-6">«Ce soir-là, je n’avais qu’une envie. Que quelqu’un marque. Cela aurait pu être n’importe qui. Moi, un joueur de mon équipe ou un adversaire, peu importe. Tout le monde voulait rentrer à la maison. Par chance, le calvaire s’est terminé.» La confidence vient d’un acteur du plus long match de l’histoire du championnat de Suisse. «Ne cite pas mon nom», tient-il à préciser. Mais notre interlocuteur se souvient encore comme si c’était hier de ces 21 et 22 mars 2019. Il était 00h54 au moment du but décisif et le match avait commencé depuis bientôt cinq heures.
-					</p>
-					<p class="text-lg font-light mb-10 md:mb-16">Particularité des play-off, les prolongations se jouent jusqu’à ce que mort subite s’ensuive. Tant qu’aucune équipe n’a marqué, la rencontre se poursuit. Inlassablement. À mesure que les minutes s’écoulent, les rencontres entrent dans une autre dimension. Une réalité alternative où chaque petit geste anodin répété 10'000 fois à l’entraînement devient une épreuve. Chaque décision peut avoir une conséquence démesurée. Pour ce reportage au long cours, plusieurs acteurs de deux matches de légende ont été convoqués. Si tous n’avouent pas avoir gardé un bon souvenir de ces soirées hors normes, ils ne sont pas près de l’oublier. On se replonge dans deux morceaux de bravoure: Fribourg - Lausanne (2022) et Genève - Berne (2019).</p>
-					<div class="grid md:grid-cols-2 gap-4 md:gap-8">
-						<a href="#match1" class="hover:-translate-y-1">
-							<div class="text-center bg-gray-200 px-4 py-8 -ml-0 lg:-ml-16 xl:-ml-32">
-								<span class="text-sm font-normal uppercase block mb-2">Match 1</span>
-								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-fribourg.png" alt="pictogramme Fribourg Gottéron" class="w-10 float-left mr-2">Fribourg - Lausanne<img src="img/this/picto-lausanne.png" alt="Pictrogramme Lausanne HC" class="w-10 float-right ml-2"></span>
-								<span class="block text-lg">29 mars 2022. 3-2 ap.</span>
-							</div>
-						</a>
-						<a href="#match2" class="hover:-translate-y-1">
-							<div class="text-center bg-gray-200 px-4 py-8 -mr-0 lg:-mr-16 xl:-mr-32">
-								<span class="text-sm font-normal uppercase block mb-2">Match 2</span>
-								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-geneve.png" alt="Pictrogramme SC Genève" class="w-10 float-left mr-2">Genève - Berne<img src="img/this/picto-berne.png" alt="Pictrogramme HC Berne" class="w-10 float-right ml-2"></span>
-								<span class="block text-lg">21 mars 2019. 2-3 ap.</span>
-							</div>
-						</a>
-					</div>
-				</div>
-			</section>
+			{{ block('social') }}
+			<div class="container mt-8 mb-12 md:mb-20 max-w-2xl">
+				<p class="lettrine text-lg font-light">
+					A votre avis, où se niche aujourd’hui l’essentiel de l’impact carbone d’une tasse de café Nespresso ? L’emballage ? Non ! Le conditionnement compte pour 14 % seulement des émissions totales. La distribution ? Encore raté ! Acheminer les capsules dans les différents  points de vente en Suisse, n’en représentent que 2 %. En réalité, l’impact carbone d’une pause café se niche dans deux aspects : l’approvisionnement (35 %), et la phase de préparation à la maison (45 %).
+				</p>
+			</div>
 		</div>
-
-		<!-- CHAPITRE 1 -->
-		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
-			<figure class="title -ml-4 -mr-4" id="match1">
-				<img src="img/this/match1desktop.png" alt="Image confrontation Fribourg Lausanne desktop" class="mobile-hidden">
-				<img src="img/this/match1mobile.png" alt="Image confrontation Fribourg Lausanne mobile" class="desktop-hidden">
-				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+		
+		<section class="color overflow-auto px-4 md:px-0 py-4 md:py-12 relative mb-4">
+			<figure class="container max-w-2xl">
+				<h4 class="max-w-md text-xl md:text-3xl font-bold mb-12 md:mb-12">Cycle de vie d’une tasse de café Nespresso / empreinte carbone</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 779 624" class="w-full mb-10 md:mb-12" id="svg-circle">
+					<defs>
+					  <clipPath id="clip-path">
+						<rect id="Rectangle_34" data-name="Rectangle 34" width="59.651" height="59.913" fill="none"/>
+					  </clipPath>
+					</defs>
+					<g id="schema1" transform="translate(-595 -177)">
+					  <g id="tasse">
+						<g id="Rectangle_32" data-name="Rectangle 32" transform="translate(1069.906 403.609) rotate(42)" fill="#fff" stroke="#A7A879" stroke-width="4">
+						  <rect width="26.599" height="54.116" rx="10" stroke="none"/>
+						  <rect x="2" y="2" width="22.599" height="50.116" rx="8" fill="none"/>
+						</g>
+						<g id="Ellipse_3" data-name="Ellipse 3" transform="translate(874 415)" fill="#fff" stroke="#A7A879" stroke-width="4">
+						  <circle cx="104" cy="104" r="104" stroke="none"/>
+						  <circle cx="104" cy="104" r="102" fill="none"/>
+						</g>
+						<circle id="Ellipse_4" data-name="Ellipse 4" cx="86.5" cy="86.5" r="86.5" transform="translate(892 433)" fill="#887639"/>
+						<ellipse id="Ellipse_5" data-name="Ellipse 5" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(939 500)" fill="#363636"/>
+						<circle id="Ellipse_6" data-name="Ellipse 6" cx="5.5" cy="5.5" r="5.5" transform="translate(930 486)" fill="#363636"/>
+						<ellipse id="Ellipse_7" data-name="Ellipse 7" cx="6.5" cy="6" rx="6.5" ry="6" transform="translate(954 467)" fill="#363636"/>
+						<circle id="Ellipse_8" data-name="Ellipse 8" cx="4.5" cy="4.5" r="4.5" transform="translate(986 458)" fill="#363636"/>
+						<circle id="Ellipse_9" data-name="Ellipse 9" cx="3.5" cy="3.5" r="3.5" transform="translate(954 451)" fill="#363636"/>
+						<circle id="Ellipse_10" data-name="Ellipse 10" cx="3.5" cy="3.5" r="3.5" transform="translate(976 456)" fill="#363636"/>
+						<circle id="Ellipse_11" data-name="Ellipse 11" cx="3.5" cy="3.5" r="3.5" transform="translate(944 472)" fill="#363636"/>
+						<circle id="Ellipse_12" data-name="Ellipse 12" cx="3.5" cy="3.5" r="3.5" transform="translate(935 476)" fill="#363636"/>
+						<ellipse id="Ellipse_13" data-name="Ellipse 13" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(917 484)" fill="#363636"/>
+						<circle id="Ellipse_14" data-name="Ellipse 14" cx="3.5" cy="3.5" r="3.5" transform="translate(923 494)" fill="#363636"/>
+						<circle id="Ellipse_15" data-name="Ellipse 15" cx="4" cy="4" r="4" transform="translate(916 501)" fill="#363636"/>
+						<ellipse id="Ellipse_16" data-name="Ellipse 16" cx="3.5" cy="4" rx="3.5" ry="4" transform="translate(951 478)" fill="#363636"/>
+						<circle id="Ellipse_17" data-name="Ellipse 17" cx="2.5" cy="2.5" r="2.5" transform="translate(965 478)" fill="#363636"/>
+						<ellipse id="Ellipse_18" data-name="Ellipse 18" cx="4" cy="3.5" rx="4" ry="3.5" transform="translate(950 488)" fill="#363636"/>
+						<ellipse id="Ellipse_19" data-name="Ellipse 19" cx="3" cy="2.5" rx="3" ry="2.5" transform="translate(927 476)" fill="#363636"/>
+						<path id="Tracé_961" data-name="Tracé 961" d="M-829.892,1532.252s85.194,40.134,36.28,119.12c-34.69,50.882-113.005,45.134-136.07-20.654h0s22.006,14.938,32.224,7.564,8.642-28.039,27.1-46.491,27.209-7.97,40.462-25.874S-829.892,1532.252-829.892,1532.252Z" transform="translate(1834.356 -1086.563)" fill="#363636"/>
+					  </g>
+					  <g id="icon-5" transform="translate(-15.35 -17)">
+						<path id="Tracé_1004" data-name="Tracé 1004" d="M-769.29,1327.937l.487-3.19,1.968-1.549,11.188.479,1.593,1.07v3.968l17.338.417,2.051,1.491.723,2-.465,1.926-1.72.955h-1.935l-6.763,48.347-1.163,1.4-.55.422-2.94.574-26.458-.574-3-1.82-.52-3.469-5.864-44.878-2.681-.471-1.963-2.944,1.006-2.026,2.02-.931h17.1Z" transform="translate(1701 -1117.31)" fill="#fff"/>
+						<path id="Tracé_990" data-name="Tracé 990" d="M46.692,65.325H20.12a4.025,4.025,0,0,1-3.994-3.473L9.7,14.7H57.025L50.686,61.852A4.025,4.025,0,0,1,46.692,65.325Z" transform="translate(905.872 202.739)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_991" data-name="Tracé 991" d="M57.535,13.778H8.039A3.077,3.077,0,0,1,5,10.739H5A3.077,3.077,0,0,1,8.039,7.7H57.449a3.077,3.077,0,0,1,3.039,3.039h0A2.948,2.948,0,0,1,57.535,13.778Z" transform="translate(906.49 203.66)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_992" data-name="Tracé 992" d="M43.557,6.731H28.1V4.126A3.113,3.113,0,0,1,31.226,1h9.2a3.113,3.113,0,0,1,3.126,3.126Z" transform="translate(903.449 204.542)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_993" data-name="Tracé 993" d="M34.449,31.66,29.76,36.436l-3.56-3.56L30.889,28.1Z" transform="translate(903.699 200.975)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_994" data-name="Tracé 994" d="M38.634,37.652l1.3-1.216L31.6,28.1h7.12L43.5,32.876l1.3-1.3.174,6.078Z" transform="translate(902.989 200.975)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_995" data-name="Tracé 995" d="M26.1,51.4l6.513,1.737L31.313,58,24.8,56.263Z" transform="translate(903.884 197.907)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_996" data-name="Tracé 996" d="M29.123,43.671,27.3,43.15,24.26,54.525,20.787,48.36l1.737-6.513L20.7,41.413,25.91,38.2Z" transform="translate(904.424 199.645)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_997" data-name="Tracé 997" d="M47.437,48.728,45.7,42.3,50.563,41,52.3,47.426Z" transform="translate(901.132 199.277)" fill="none" stroke="#000" stroke-width="2"/>
+						<path id="Tracé_998" data-name="Tracé 998" d="M39.213,49.7l.434,1.737L51.023,48.4l-3.56,6.165L40.95,56.3l.434,1.737L36,55.173Z" transform="translate(902.409 198.302)" fill="none" stroke="#000" stroke-width="2"/>
+					  </g>
+					  <g id="fleche-5">
+						<path id="Tracé_1021" data-name="Tracé 1021" d="M16.353,79.476A237.622,237.622,0,0,1,151.78,1.312" transform="translate(785.925 279.798)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1022" data-name="Tracé 1022" d="M67.4,3.09,54.25,11.66l2.268-6.481L52.012,0Z" transform="translate(880.475 276.32)" fill="#1d1d1b"/>
+					  </g>
+					  <g id="icon-35" transform="translate(1026.197 186.84)">
+						<path id="Tracé_999" data-name="Tracé 999" d="M1.873,4l2.69,5.155,3.67,4.677L17.5,21.776l5.288,5.079,2.706,5.335.873,8.229-1.852,7.555-4.239,1.1H13.6l-6.67-4.111-3.31-5.479L1.528,31.3.857,23.529V14.756Z" transform="translate(-0.857)" fill="#fff"/>
+						<path id="Tracé_1000" data-name="Tracé 1000" d="M41.337,38.919l-.6-4.966,2.219-4.691,3.7-2.768,8.168-1.809,9.553-.628h5.118L65.03,26.494l-3.155,2.768-2.792,3.722-2.46,3.578L53.42,39.5l-4.833,1.617-6.434-.584Z" transform="translate(-0.857)" fill="#fff"/>
+						<path id="path192" d="M-29.581-16.323c-3.567,5.134-6.67,9.561-16.158,7.252a.718.718,0,0,0-.007-.1c-.031-.107-.05-.207-.078-.312a29.022,29.022,0,0,1,11.711-6.95.832.832,0,0,0,.564-1.031.833.833,0,0,0-1.032-.564,30.2,30.2,0,0,0-11.643,6.679c-.447-2.808-.02-5.051,1.322-6.8,2.828-3.678,9.773-5.424,22.233-5.537-3.036,1.789-5,4.6-6.911,7.355M-79.625-3.579c-5.924-5.253-7.953-17.365-6.446-38.955,2.286,6.08,7.08,9.951,11.757,13.709,7.576,6.088,14.738,11.853,10.229,26.762-1-1.332-2.048-2.671-3.109-4.025C-72.3-12.6-77.573-19.337-78.82-27.134a.826.826,0,0,0-.951-.689.831.831,0,0,0-.689.952c1.315,8.22,6.725,15.128,11.958,21.808,1.074,1.37,2.133,2.725,3.142,4.072C-71.6.234-76.275-.61-79.625-3.579M-17.37-24.085a.726.726,0,0,0,.063-.145.679.679,0,0,0,.035-.158.72.72,0,0,0,.019-.084.655.655,0,0,0-.015-.081c0-.028.007-.054,0-.081a.624.624,0,0,0-.031-.077.761.761,0,0,0-.062-.158A.763.763,0,0,0-17.442-25a.866.866,0,0,0-.112-.115.817.817,0,0,0-.125-.087.792.792,0,0,0-.148-.066.887.887,0,0,0-.156-.035c-.029,0-.055-.017-.086-.018-16.171-.3-24.593,1.534-28.152,6.163-1.816,2.362-2.282,5.374-1.439,9.165A42.131,42.131,0,0,0-58.186,7.6,40.794,40.794,0,0,0-62.868-.4c5.6-16.856-2.538-23.394-10.405-29.716-5.632-4.527-11.456-9.206-12.383-17.827a.705.705,0,0,0-.027-.084.727.727,0,0,0-.044-.145.792.792,0,0,0-.089-.16.717.717,0,0,0-.075-.091.8.8,0,0,0-.151-.123.687.687,0,0,0-.112-.059.8.8,0,0,0-.173-.052.63.63,0,0,0-.082-.024.713.713,0,0,0-.085.008c-.027,0-.051-.009-.078-.007s-.047.017-.073.022a.884.884,0,0,0-.179.057.84.84,0,0,0-.113.064.742.742,0,0,0-.139.116.841.841,0,0,0-.087.108.854.854,0,0,0-.077.147.758.758,0,0,0-.045.155.718.718,0,0,0-.025.082c-2.3,25.828-.333,39.463,6.583,45.595A14.788,14.788,0,0,0-70.493,1.22,29.1,29.1,0,0,0-64.48.531.741.741,0,0,0-64.3.453c3.4,4.724,5.986,9.373,5.986,14.256a.831.831,0,0,0,.831.831.831.831,0,0,0,.831-.831A17.6,17.6,0,0,0-57.657,9a.85.85,0,0,0,.175.022.831.831,0,0,0,.805-.63A39.939,39.939,0,0,1-47.115-8.2a.826.826,0,0,0,.607.657,22,22,0,0,0,5.462.767c6.854,0,9.884-4.359,12.83-8.6,2.633-3.791,5.119-7.37,10.278-8.294a.874.874,0,0,0,.081-.032.771.771,0,0,0,.158-.062.758.758,0,0,0,.126-.084.849.849,0,0,0,.115-.111.777.777,0,0,0,.087-.126" transform="translate(88.228 48.685)"/>
+					  </g>
+					  <text id="txt-35" transform="translate(1121 219)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Approvisionnement en </tspan><tspan x="0" y="39">café vert</tspan></text>
+					  <text id="txt-45" transform="translate(616 631)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Préparation </tspan><tspan x="0" y="39">du café</tspan></text>
+					  <text id="nb-35" transform="translate(1121 177)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">35%</tspan></text>
+					  <text id="nb-45" transform="translate(616 589)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">45%</tspan></text>
+					  <g id="icon-7">
+						<rect id="Rectangle_40" data-name="Rectangle 40" width="31" height="62" transform="translate(748 345)" fill="#fff"/>
+						<path id="grey_hotel-building_icon-icons.com_59461" d="M32.612,30.557H27.057V25h5.556Zm0-13.89H27.057v5.556h5.556Zm8.334,25H35.39v5.556h5.556Zm0-25H35.39v5.556h5.556Zm0,16.668H35.39v5.556h5.556Zm0-25H35.39V13.89h5.556Zm0,16.668H35.39v5.556h5.556ZM32.612,8.334H27.057V13.89h5.556ZM24.279,25H18.723v5.556h5.556Zm0,16.668H18.723v5.556h5.556Zm0-8.334H18.723v5.556h5.556ZM46.78,5.556V63.892h3.889V66.67H9V63.892h3.889V5.556H9V2.778h7.778V0H42.891V2.778h7.778V5.556ZM34,56.947a4.167,4.167,0,1,0-8.334,0v6.945H34ZM44,5.556H15.667V63.892H22.89V56.947a6.945,6.945,0,0,1,13.89,0v6.945H44ZM32.612,41.669H27.057v5.556h5.556Zm0-8.334H27.057v5.556h5.556ZM24.279,16.668H18.723v5.556h5.556Zm0-8.334H18.723V13.89h5.556Z" transform="translate(733.565 341.182)"/>
+					  </g>
+					  <g id="fleche-7">
+						<path id="Tracé_1023" data-name="Tracé 1023" d="M14.262,202.172a239.025,239.025,0,0,1-.54-158.332" transform="translate(743.891 392.56)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1024" data-name="Tracé 1024" d="M12.629,41.2,13.5,56.872l-4.488-5.2L2.273,52.994Z" transform="translate(748.594 385.55)" fill="#1d1d1b"/>
+					  </g>
+					  <g id="icon-45" transform="translate(752.655 599.711)">
+						<path id="Tracé_1003" data-name="Tracé 1003" d="M-947.369,1737.042l2.312-10.39,6.358-6.5,5.25-1.614,4.263-.281,6.194,1.9,4.68,3.472,3.192,6.261,1.074,6.672v47.833h-33.615Z" transform="translate(948.345 -1717.711)" fill="#fff"/>
+						<path id="path244" d="M-3166.171-6587.274h31.8v7.267h-31.8Zm16.087-56.861c9.642,0,15.019,6.595,15.648,19.114h-31.656c.7-12.353,6.323-19.114,16.008-19.114m-.353,37.136a12.356,12.356,0,0,1-12.336-12.089h24.672A12.357,12.357,0,0,1-3150.437-6607m-.672,1.842h1.344v2.135h-1.344Zm16.736-17.312v1.679h-31.8v-1.52c0-.346.02-.671.027-1.01h31.75c.005.287.021.559.021.851m-9.9,32.3c3.271-3.389,3.116-8.883,3.108-9.115a.851.851,0,0,0-.851-.821h-17.3a.852.852,0,0,0-.851.844c0,.052,0,.366.034.843-1.7-.48-2.667-.125-3.188.316a2.209,2.209,0,0,0-.635,2.278c.41,1.748,2.438,3.909,6.043,4.8a.864.864,0,0,0,.205.024c.009,0,.017-.008.026-.008a8.8,8.8,0,0,0,.839,1,7.979,7.979,0,0,0,1.247,1.026h-10.57v-30.111h1.7a14.057,14.057,0,0,0,11.664,13.575v3.343a.852.852,0,0,0,.851.851h3.046a.852.852,0,0,0,.851-.851v-3.343a14.058,14.058,0,0,0,11.664-13.575h2.026v30.111h-11.363a8.093,8.093,0,0,0,1.46-1.191m-14.152-8.234h15.541c-.086,1.536-.52,4.884-2.613,7.052a7.024,7.024,0,0,1-5.275,2.034,6.583,6.583,0,0,1-4.86-1.882c-2.139-2.152-2.665-5.615-2.793-7.2m-.475,5.264c-2.134-.874-3.206-2.236-3.4-3.073-.039-.164-.08-.458.077-.59.2-.172.922-.293,2.32.255a15.472,15.472,0,0,0,1.005,3.407m8.819-52.7c-6.643,0-17.789,3.056-17.789,23.527v43.152a.851.851,0,0,0,.851.852h33.5a.851.851,0,0,0,.851-.852v-43.31c0-19.314-9.469-23.37-17.413-23.37" transform="translate(3167.873 6645.84)"/>
+						<g id="g246" transform="translate(12.238 6.153)">
+						  <path id="path248" d="M-32.1-10.187a3.667,3.667,0,0,1,3.662,3.662A3.666,3.666,0,0,1-32.1-2.864,3.665,3.665,0,0,1-35.76-6.525,3.666,3.666,0,0,1-32.1-10.187m0,9.025a5.37,5.37,0,0,0,5.364-5.363A5.37,5.37,0,0,0-32.1-11.889a5.369,5.369,0,0,0-5.363,5.363A5.369,5.369,0,0,0-32.1-1.162" transform="translate(37.461 11.889)"/>
+						</g>
+					  </g>
+					  <g id="fleche-45">
+						<path id="Tracé_1025" data-name="Tracé 1025" d="M150.354,183.44A237.523,237.523,0,0,1,17.3,108.972" transform="translate(788.428 565.257)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1026" data-name="Tracé 1026" d="M15.449,106.836,29.6,113.643l-6.719,1.42L20.784,121.6Z" transform="translate(783.529 559.594)" fill="#1d1d1b"/>
+					  </g>
+					  <g id="icon-2" transform="translate(941.988 719.706)">
+						<path id="Tracé_1002" data-name="Tracé 1002" d="M-748.417,1860.858h41.011l.289,12.447h12.2l8.389,12.6v11.557h-6.732l-.555-2.3-1.1-1.251-2.557-.583h-2.542l-1.344,1.833-.653,1.754-5.4.544h-24.973l-1.006-2.761-2.219-1.371-1.87-.324-1.938.324-1.063,1.833-.586,2.3h-7.671Z" transform="translate(759.012 -1837.706)" fill="#fff"/>
+						<path id="Tracé_982" data-name="Tracé 982" d="M90.643,60.533v11.8H84.008a4.424,4.424,0,0,0-8.847,0H70V48H82.533Zm-5.161,0-4.424-7.373h-5.9v7.373Z" transform="translate(-18.282 -12.501)" fill="none"/>
+						<path id="Tracé_983" data-name="Tracé 983" d="M20.925,68.337H13.737A.737.737,0,0,1,13,67.6V30.737A.737.737,0,0,1,13.737,30h35.8v1.475H14.475V66.863h6.451Z" transform="translate(-3.305 -7.772)"/>
+						<path id="Tracé_984" data-name="Tracé 984" d="M28.161,84.322a5.161,5.161,0,1,1,5.161-5.161,5.161,5.161,0,0,1-5.161,5.161Zm0-8.847a3.686,3.686,0,1,0,3.686,3.686A3.686,3.686,0,0,0,28.161,75.475Z" transform="translate(-5.933 -19.333)"/>
+						<rect id="Rectangle_36" data-name="Rectangle 36" width="6" height="2" transform="translate(51.012 58.295)"/>
+						<path id="Tracé_986" data-name="Tracé 986" d="M90.643,72.8H84.008V71.329h5.9V60.484l-7.771-12.01H70V47H82.533a.737.737,0,0,1,.619.339l8.11,12.533a.737.737,0,0,1,.118.4v11.8A.737.737,0,0,1,90.643,72.8Z" transform="translate(-18.282 -12.239)"/>
+						<path id="Tracé_987" data-name="Tracé 987" d="M61.132,68.337H36.25V66.863H60.4V31.475H53.76V30h7.373a.737.737,0,0,1,.737.737V67.6A.737.737,0,0,1,61.132,68.337Z" transform="translate(-9.414 -7.772)"/>
+						<path id="Tracé_988" data-name="Tracé 988" d="M81.161,84.322a5.161,5.161,0,1,1,5.161-5.161,5.161,5.161,0,0,1-5.161,5.161Zm0-8.847a3.686,3.686,0,1,0,3.686,3.686A3.686,3.686,0,0,0,81.161,75.475Z" transform="translate(-19.858 -19.333)"/>
+						<path id="Tracé_989" data-name="Tracé 989" d="M87.059,62.847H76.737A.737.737,0,0,1,76,62.11V54.737A.737.737,0,0,1,76.737,54h5.9a.737.737,0,0,1,.634.361l4.424,7.373a.737.737,0,0,1-.634,1.113Zm-9.584-1.475h8.279l-3.539-5.9H77.475Z" transform="translate(-19.858 -14.078)"/>
+						<rect id="Rectangle_39" data-name="Rectangle 39" width="74" height="74" transform="translate(0.012 0.295)" fill="none"/>
+					  </g>
+					  <g id="fleche-2">
+						<path id="Tracé_1027" data-name="Tracé 1027" d="M213.783,107.344A237.7,237.7,0,0,1,78.3,187.228" transform="translate(950.183 560.941)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1028" data-name="Tracé 1028" d="M75.52,136l13.087-8.669-2.216,6.5,4.542,5.149Z" transform="translate(942.806 613.94)" fill="#1d1d1b"/>
+					  </g>
+					  <g id="icon-3">
+						<path id="Tracé_1001" data-name="Tracé 1001" d="M-490.394,1727.289h10.427v51.754h-52.078v-31.376l10.15-9.861.317,9.861,10.21-9.861.251,9.861,10.3-10.182v10.182l10.1-9.861Z" transform="translate(1701 -1118)" fill="#fff"/>
+						<path id="factory_icon_142647" d="M59.373,60.319a.945.945,0,0,0,.945-.945V7.438a.945.945,0,0,0-.945-.945H48.984a.945.945,0,0,0-.945.945v10L39.58,25.893l.128-8.053a.946.946,0,0,0-1.61-.686l-8.965,8.825-.087-8.162a.945.945,0,0,0-1.617-.654l-8.692,8.785-.113-8.133a.945.945,0,0,0-1.618-.651L6.765,27.549a.943.943,0,0,0-.273.663V59.374a.945.945,0,0,0,.945.945H59.373ZM49.931,8.383h8.5V58.427h-8.5V8.383ZM8.384,28.6l8.383-8.5.113,8.127a.945.945,0,0,0,1.617.651L27.18,20.1l.087,8.121a.945.945,0,0,0,1.608.663l8.905-8.767L37.653,28.2a.945.945,0,0,0,1.614.682l8.771-8.773v38.32H8.384Zm18.084,2.074H21.313a.945.945,0,0,0-.945.945v5.155a.945.945,0,0,0,.945.945h5.155a.945.945,0,0,0,.945-.945V31.618A.943.943,0,0,0,26.468,30.673Zm-.945,5.155H22.259V32.565h3.263Zm-8.569-5.155H11.8a.945.945,0,0,0-.945.945v5.155a.945.945,0,0,0,.945.945h5.154a.945.945,0,0,0,.945-.945V31.618A.945.945,0,0,0,16.953,30.673Zm-.947,5.155H12.745V32.565h3.262ZM45.5,30.673H40.342a.945.945,0,0,0-.945.945v5.155a.945.945,0,0,0,.945.945H45.5a.945.945,0,0,0,.945-.945V31.618A.943.943,0,0,0,45.5,30.673Zm-.945,5.155H41.289V32.565h3.263Zm-8.569-5.155H30.827a.945.945,0,0,0-.945.945v5.155a.945.945,0,0,0,.945.945h5.155a.945.945,0,0,0,.945-.945V31.618A.943.943,0,0,0,35.982,30.673Zm-.945,5.155H31.774V32.565h3.263Z" transform="translate(1161.615 601.602)"/>
+					  </g>
+					  <g id="fleche-3">
+						<path id="Tracé_1029" data-name="Tracé 1029" d="M127.014,43.432a237.455,237.455,0,0,1,13.752,79.895,237.6,237.6,0,0,1-12.379,75.925" transform="translate(1079.342 391.478)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1030" data-name="Tracé 1030" d="M127.172,100.134l-1.019-15.665,4.535,5.156,6.726-1.388Z" transform="translate(1077.059 500.289)" fill="#1d1d1b"/>
+					  </g>
+					  <text id="txt-3" transform="translate(1267 645)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Production</tspan></text>
+					  <text id="txt-2" transform="translate(1110 777)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Distribution</tspan></text>
+					  <text id="nb-3" transform="translate(1267 602)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">3%</tspan></text>
+					  <text id="nb-2" transform="translate(1110 734)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">2%</tspan></text>
+					  <g id="icon-14" transform="translate(1164.872 362.202)">
+						<g id="Groupe_2494" data-name="Groupe 2494" clip-path="url(#clip-path)">
+						  <path id="Tracé_974" data-name="Tracé 974" d="M27.727,59.91a54.293,54.293,0,0,1-10.281-1.142A34.512,34.512,0,0,1,5.173,54.215,12.806,12.806,0,0,1,1.082,50.3a6.785,6.785,0,0,1,.548-8.088A15.063,15.063,0,0,1,5.483,38.9,1.158,1.158,0,0,0,6,38.217c.383-2.253.718-4.514,1.075-6.772.424-2.683.862-5.363,1.283-8.046q.6-3.838,1.181-7.68c.38-2.537.7-5.084,1.132-7.613A3.173,3.173,0,0,1,12.6,5.786c1.5-.687,3.043-1.269,4.57-1.89Q20.837,2.406,24.5.925A14.517,14.517,0,0,1,31.019.049a15.7,15.7,0,0,1,5.517,1.558c2.25,1.034,4.7,1.631,7.018,2.523a21.315,21.315,0,0,1,3.729,1.846c1.572.993,1.819,2.715,2.063,4.4q.721,4.977,1.473,9.95.777,5.2,1.566,10.389c.376,2.485.741,4.972,1.16,7.451a1.353,1.353,0,0,0,.623.8,10.857,10.857,0,0,1,5.176,5.862,5.935,5.935,0,0,1-.253,4.388,11.564,11.564,0,0,1-4.524,4.918A33.205,33.205,0,0,1,44.085,58.3,66.468,66.468,0,0,1,27.727,59.91m-15.765-48a2.59,2.59,0,0,0-.179.483q-.6,3.914-1.189,7.83c-.389,2.611-.751,5.227-1.155,7.836-.513,3.311-1.068,6.615-1.583,9.925-.417,2.684-.767,5.378-1.22,8.056A2.486,2.486,0,0,0,7.2,48.216a9.625,9.625,0,0,0,3.841,2.535,36.249,36.249,0,0,0,10.317,2.528c8.292.869,16.544.8,24.627-1.617a15.445,15.445,0,0,0,5.727-2.748,2.707,2.707,0,0,0,1.331-2.426c-.409-2.891-.872-5.774-1.314-8.66-.419-2.735-.856-5.468-1.256-8.206s-.737-5.483-1.146-8.219c-.323-2.157-.709-4.3-1.074-6.456-.172-1.012-.358-2.022-.55-3.107-.226.117-.342.162-.442.231-3.362,2.284-7.226,3.063-11.14,3.506a48.918,48.918,0,0,1-15.784-.534,44.027,44.027,0,0,1-5.459-1.6,21.966,21.966,0,0,1-2.91-1.534m20.425,2.269a37.655,37.655,0,0,0,10.5-1.841,8.765,8.765,0,0,0,3.907-2.259,1.348,1.348,0,0,0,.048-2.04A5.585,5.585,0,0,0,45.006,6.6c-2.252-.914-4.565-1.677-6.842-2.529-.872-.326-1.679-.586-2.31.405a.884.884,0,0,1-.456.26,14.843,14.843,0,0,1-2.873.911,16.61,16.61,0,0,1-6.655-.3,7.727,7.727,0,0,1-2.419-1.2A1.143,1.143,0,0,0,22.179,3.9c-1.748.68-3.514,1.316-5.261,2-1.226.479-2.448.973-3.643,1.525a1.467,1.467,0,0,0-.9,1.758,3.649,3.649,0,0,0,1.216,1.568,13.155,13.155,0,0,0,5.14,2.191,48.368,48.368,0,0,0,13.654,1.235m21.579,26.94c.265,1.619.46,3.071.753,4.5a3.946,3.946,0,0,1-.42,2.934c-1.21,2.061-3.221,3.063-5.3,3.905a45.588,45.588,0,0,1-14.873,2.952A66.7,66.7,0,0,1,17.8,54.477,29.714,29.714,0,0,1,8.451,51.4c-2.8-1.609-4.234-3.2-3.387-6.735.266-1.113.333-2.274.491-3.413l-.225-.16a27.042,27.042,0,0,0-2.1,2,5.141,5.141,0,0,0,.129,7.284A16.894,16.894,0,0,0,9.094,54.32,42.976,42.976,0,0,0,22.245,57.7a61.6,61.6,0,0,0,18.076-.451,42.67,42.67,0,0,0,9.849-2.787,17.776,17.776,0,0,0,5.886-3.859c3.357-3.543,1.539-7.345-2.088-9.49M34.85,2.868c-1.944-1.469-8.339-1.44-10.1.011,1.389,1.6,8.587,1.617,10.1-.011" transform="translate(0 0)"/>
+						  <path id="Tracé_975" data-name="Tracé 975" d="M48.426,77.45a21.975,21.975,0,0,0,2.91,1.534,44.044,44.044,0,0,0,5.459,1.6,48.918,48.918,0,0,0,15.784.534c3.914-.442,7.779-1.221,11.14-3.506.1-.068.217-.114.442-.231.193,1.085.379,2.095.55,3.107.364,2.151.751,4.3,1.074,6.456.409,2.736.748,5.482,1.147,8.219s.836,5.471,1.255,8.206c.442,2.886.9,5.769,1.314,8.66a2.707,2.707,0,0,1-1.331,2.426,15.446,15.446,0,0,1-5.727,2.748c-8.083,2.413-16.335,2.487-24.627,1.617A36.249,36.249,0,0,1,47.5,116.294a9.626,9.626,0,0,1-3.841-2.535,2.486,2.486,0,0,1-.559-2.179c.453-2.677.8-5.372,1.22-8.056.515-3.31,1.07-6.614,1.583-9.925.4-2.609.766-5.224,1.155-7.836s.787-5.221,1.189-7.83a2.6,2.6,0,0,1,.179-.483m31.539,8.7c-.562,0-.881.453-.76,1.236q.592,3.84,1.246,7.67c.491,2.851,1.029,5.694,1.527,8.544.582,3.326,1.135,6.656,1.717,9.982.134.77.5,1.038,1.121.9.588-.127.79-.571.638-1.318q-.259-1.267-.476-2.542c-.418-2.427-.823-4.856-1.241-7.283Q82.852,98.2,81.955,93.06q-.522-3-1.052-6c-.093-.531-.343-.9-.938-.914m.379-2.208c-.146-.926-.2-1.616-.377-2.275a.866.866,0,1,0-1.7.326c.081.654.2,1.305.34,1.95.108.5.45.9.96.739.347-.112.59-.55.778-.74" transform="translate(-36.464 -65.543)" fill="#fff"/>
+						  <path id="Tracé_976" data-name="Tracé 976" d="M100.558,35.1A48.367,48.367,0,0,1,86.9,33.865a13.155,13.155,0,0,1-5.14-2.191,3.649,3.649,0,0,1-1.216-1.568,1.467,1.467,0,0,1,.9-1.758c1.194-.552,2.417-1.046,3.643-1.525,1.747-.683,3.513-1.318,5.261-2a1.143,1.143,0,0,1,1.273.256,7.727,7.727,0,0,0,2.419,1.2,16.61,16.61,0,0,0,6.655.3,14.843,14.843,0,0,0,2.873-.911.884.884,0,0,0,.456-.26c.631-.991,1.438-.731,2.31-.405,2.278.852,4.59,1.615,6.842,2.529a5.585,5.585,0,0,1,1.832,1.433,1.348,1.348,0,0,1-.048,2.04,8.765,8.765,0,0,1-3.907,2.259,37.66,37.66,0,0,1-10.5,1.841m3-8.9c-.282.208-.63.343-.748.589a.961.961,0,0,0,.118.822,12.273,12.273,0,0,0,1.184,1.284c1.1,1.119,2.2,2.245,3.325,3.339.571.554,1.311.428,1.423-.245a1.367,1.367,0,0,0-.374-.986c-1.367-1.462-2.77-2.89-4.175-4.316a4.425,4.425,0,0,0-.755-.487" transform="translate(-68.171 -20.924)" fill="#fff"/>
+						  <path id="Tracé_977" data-name="Tracé 977" d="M63.819,268.611c3.627,2.146,5.445,5.947,2.088,9.49a17.772,17.772,0,0,1-5.886,3.859,42.675,42.675,0,0,1-9.849,2.788,61.6,61.6,0,0,1-18.076.45,42.976,42.976,0,0,1-13.151-3.383,16.892,16.892,0,0,1-5.735-3.937,5.14,5.14,0,0,1-.129-7.284,27.047,27.047,0,0,1,2.1-2l.225.16c-.158,1.139-.225,2.3-.491,3.413-.847,3.539.584,5.126,3.387,6.735a29.716,29.716,0,0,0,9.354,3.074,66.711,66.711,0,0,0,16.326.932,45.593,45.593,0,0,0,14.873-2.952c2.074-.843,4.085-1.845,5.3-3.905a3.944,3.944,0,0,0,.42-2.934c-.293-1.432-.487-2.884-.753-4.5" transform="translate(-9.853 -227.496)" fill="#fff"/>
+						  <path id="Tracé_978" data-name="Tracé 978" d="M171.859,12.711c-1.515,1.629-8.712,1.613-10.1.011,1.762-1.452,8.157-1.481,10.1-.011" transform="translate(-137.009 -9.843)" fill="#fff"/>
+						  <path id="Tracé_979" data-name="Tracé 979" d="M279.969,134.655c.6.014.845.382.938.913q.526,3,1.052,6,.894,5.139,1.781,10.279c.418,2.427.823,4.856,1.241,7.283.146.85.3,1.7.476,2.542.152.747-.051,1.191-.638,1.318-.618.133-.987-.135-1.121-.9-.581-3.326-1.135-6.656-1.716-9.982-.5-2.85-1.036-5.693-1.527-8.544q-.659-3.829-1.246-7.67c-.121-.783.2-1.231.76-1.236" transform="translate(-236.468 -114.053)"/>
+						  <path id="Tracé_980" data-name="Tracé 980" d="M275.232,103.622c-.188.19-.431.628-.778.74-.51.164-.851-.239-.96-.739-.139-.645-.259-1.3-.34-1.95a.866.866,0,1,1,1.7-.326c.174.659.231,1.349.377,2.275" transform="translate(-231.352 -85.228)"/>
+						  <path id="Tracé_981" data-name="Tracé 981" d="M226.906,34.48a4.425,4.425,0,0,1,.755.487c1.4,1.426,2.808,2.854,4.175,4.316a1.367,1.367,0,0,1,.374.986c-.112.673-.852.8-1.423.245-1.127-1.094-2.223-2.22-3.325-3.339a12.271,12.271,0,0,1-1.184-1.284.961.961,0,0,1-.118-.822c.117-.246.466-.381.748-.589" transform="translate(-191.516 -29.205)"/>
+						</g>
+					  </g>
+					  <g id="fleche-14">
+						<path id="Tracé_1031" data-name="Tracé 1031" d="M78.445,1.429A237.625,237.625,0,0,1,211.206,78.647" transform="translate(950.562 280.108)" fill="none" stroke="#1d1d1b" stroke-miterlimit="10" stroke-width="3"/>
+						<path id="Tracé_1032" data-name="Tracé 1032" d="M126.789,35.538l-14.018-7.066,6.744-1.3,2.213-6.5Z" transform="translate(1041.578 331.141)" fill="#1d1d1b"/>
+					  </g>
+					  <text id="txt-14" transform="translate(1270 399)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Emballage</tspan></text>
+					  <text id="txt-5" transform="translate(778 227)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Fin de vie</tspan></text>
+					  <text id="nb-14" transform="translate(1270 355)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">14%</tspan></text>
+					  <text id="nb-5" transform="translate(778 183)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">-5%</tspan></text>
+					  <text id="txt-7" transform="translate(595 366)" font-size="17" font-family="Poppins-Regular, Poppins"><tspan x="0" y="18">Activité</tspan><tspan x="0" y="39">administrative</tspan></text>
+					  <text id="nb-7" transform="translate(595 324)" font-size="36" font-family="Poppins-Bold, Poppins" font-weight="700"><tspan x="0" y="38">7%</tspan></text>
+					</g>
+				  </svg>
+				  
+				  
+				<!-- <img src="img/this/docs/schema1.svg" alt="" > -->
+				<figcaption class="text-xs opacity-50">Quantis, rapport LCA B2C, avril 2019.<br>Plus d’informations sur <a href="https://nestle-nespresso.com/" target="_blank" class="underline">nestle-nespresso.com</a></figcaption>
 			</figure>
-			<section>
-				<div class="container py-4 max-w-2xl">
-					<!-- <h2 class="text-7xl">Chapitre 1</h2> -->
-					<!-- <figure class="-mx-0 lg:-mx-32 xl:-mx-64">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/test.png" alt="">
-							</div>
-						</div>
-					</figure> -->
-					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre I — Chez le consommateur en chaussettes blanches</h3> -->
-					<div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
-						<div class="author w-full">
-								<div class="align-text-bottom text-sm md:text-base">
-									<span class="inline-block font-extrabold uppercase">104’58'' de suspense à la BCF Arena</span>
-									<!-- <span class="inline-block">Texte</span> -->
-								</div>
-						</div>
-					</div>
-					<p class="lettrine text-lg font-light mb-6">Ils étaient environ 9000 au coup d’envoi de cette rencontre, à 20h. Combien étaient-ils à 00h24 pour admirer le solo de Philippe Furrer qui a donné la victoire à Fribourg Gottéron face au Lausanne HC? «Tous diront qu’ils étaient là», a souri le défenseur buteur. Mais il est vrai que cette soirée hors du commun a mis dans l’embarras bien des gens. Personne ne l’avouera, mais ils sont nombreux à avoir pris le dernier train ou le dernier bus.
-					</p>
-					<p class="text-lg font-light mb-6">«J’ai marqué le but décisif, mais j’ai reçu beaucoup de messages pour m’engueuler. À cause de nous, beaucoup d’amis ont dû rentrer à la maison à pied.» Philippe Furrer a réalisé un solo d’anthologie, mais n’a pas été épargné par les remarques. «Je vous rassure, j’ai eu davantage de félicitations», rigole le tout jeune retraité.
-					</p>
-					<!-- <blockquote class="mt-12 mb-12 border-l-4 border-black pl-4 block">
-						<span class="text-4xl font-semibold leading-normal bg-amber-100">« Passer pour un idiot aux yeux d'un imbécile est une volupté de fin gourmet »</span>
-						<span class="mt-4 block text-left font-semibold">— Jacques Chirac, Président de la République</span>
-					</blockquote> -->
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
-						<div class="container">
-							<div class="w-full">
-								<img src="img/this/quote-furrer.png" alt="Citation de Furrer">
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Face au Lausanne HC, le vétéran avait perforé toute la défense pour tromper Luca Boltshauser entre les jambes. Une délivrance pour les spectateurs de la BCF Arena à minuit passé de 24 minutes. «Ce qui m’en reste aujourd’hui? Le même goût que l’un des titres que j’ai gagnés. Oui, nous avons été éliminés en demi-finale par la suite face à Zurich. Mais cette soirée est gravée dans ma mémoire.»
-					</p>	
-					<p class="text-lg font-light mb-6">En plus de deux décennies de carrière, Philippe Furrer a vécu beaucoup de choses. Et pourtant, ce jour de mars 2022 l’a marqué. «Je n’ai rien vécu de comparable à cette soirée. Ce que je préfère, ce sont les histoires que les gens ont pu raconter à leurs proches. Chacun a vécu ce match à sa façon. Moi, par exemple, si je ne dois me souvenir que d’un détail, c’est ce bruit incroyable au moment où le puck termine sa course dans le but de Lausanne. À chaque fois que j’y repense, cela me rappelle ce sentiment de joie profonde. Cette communion entre les joueurs sur la glace et avec le public. Nous avons vraiment vécu quelque chose de spécial. Si nous remportons cette série face à Lausanne, c’est parce que nous avons trouvé un moyen de remporter ce match fou.»
-					</p>
-					
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container">
-							<div class="w-full">
-								<img src="img/this/photo1.jpg" alt="Images de Chris DiDomenico et Philippe Furrer">
-								<figcaption class="py-2 text-xs">Chris DiDomenico (à g.) et Philippe Furrer fêtent le but décisif.</figcaption>
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Ce soir-là, dans les travées de la BCF Arena, tout le monde y allait de son pronostic. Qui allait être le héros de cette soirée sans fin? Forcément, les noms du Fribourgeois Chris DiDomenico ou du Lausannois Jiri Sekac étaient les plus fréquemment cités. «Je pense bien qu’on ne me citait pas forcément», a rigolé Philippe Furrer. En 2016 pourtant, il avait déjà marqué un penalty décisif en prolongation qui avait permis à Lugano d’éliminer Genève-Servette. «Ce sont des soirées irrationnelles et ce n’est finalement pas illogique que le but ne vienne pas de celui qui est le plus attendu et donc le plus surveillé.»
-					</p>
-					<p class="text-lg font-light mb-6">Cette réussite face à Lausanne, parlons-en, justement. Le défenseur peut le raconter seconde par seconde: «Je l’ai revue tellement de fois (rires). J’ai attendu une opportunité durant toutes les prolongations. Il fallait trouver le bon moment, celui durant lequel je pourrais aller de l’avant. Je me suis dit que si une chance se présentait, j’allais tout faire pour essayer quelque chose.»
-					</p>
-					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
-						<video controls preload="auto" id="player2" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807497861/rendition/720p/file.mp4?loc=external&signature=80a9f088ec1c02b3c5247b0a11571b56fdeb24169e9eeb87d1934b081fa7e0fa" type="video/mp4"/>
-							Video not supported.
-						</video>
-					</div>
-					<p class="text-lg font-light mb-6">Un puck perdu et un dribble plus tard, le No 5 a pu loger la rondelle entre les jambes de Luca Boltshauser. «Cette feinte avait de bonnes chances de passer, car c’est difficile pour un adversaire de défendre sans faire de faute, analyse-t-il. Genazzi voulait bloquer le shoot et j’avais donc vraiment la place pour tenter quelque chose. Ensuite, tout s’est passé comme prévu et c’était magnifique. Mais c’est surtout une question d’état d’esprit. J’avais le droit de tenter quelque chose.»
-						
-					</p>
-					<p class="text-lg font-light mb-6">Encore fallait-il oser. «Cette mentalité a pu faire parfois défaut du côté de Fribourg, précise Philippe Furrer. Les gens sont ambitieux, mais sont-ils convaincus de pouvoir gagner? Ce sont des matches comme celui-ci qui permettent à un club de franchir des étapes. Prenez l’exemple de Zoug. Ils ne sont pas devenus du jour au lendemain une machine à gagner. Cela se fait par étapes. Ils ont décidé il y a 7 ou 8 ans qu’un jour, ils allaient gagner le titre. J’espère que Fribourg saura s’en inspirer.»
-					</p>
-					<p class="text-lg font-light mb-6">L’autre vestiaire, celui de Lausanne, a sonné creux après ce coup du sort. Un mélange de fatigue intense et de déception plus grande encore dont se souvient encore parfaitement Christoph Bertschy, ancien joueur du LHC passé aujourd’hui à Fribourg: «Après un match normal, tu es déjà épuisé… Là, nous avons dû ressortir trois fois du vestiaire après les 60 minutes réglementaires. C’était à chaque fois terriblement difficile de redémarrer le moteur. Tu vois que tout le monde est fatigué sur le banc d’en face et cela te donne un peu d’énergie, mais mentalement, c’est vraiment difficile.»
-					</p>
-					<blockquote class="mt-12 mb-10 border-l-8 bg-gray-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal border-gray-400">
-						<div class="flex pb-8 mb-8 border-b-2">
-							<div>
-								<h3 class="text-3xl md:text-5xl mb-2">«Ce match a laissé énormément de traces»</h3>
-								<p class="not-italic font-light text-xl md:text-2xl">Joël Genazzi (Lausanne HC)</p>	
-							</div>
-							<figure class="<!--w-1/3 float-right--> w-8/12 md:w-1/3">
-								<div class="container">
-									<div class="w-full">
-										<img src="img/this/medaillon-genazzi2.jpg" alt="Portrait de Joel Genazzi" class="rounded-full">
-										<!-- <figcaption class="py-2 px-2 text-xs font-normal"><b>Joël Genazzi</b>, joueur du Lausanne HC</figcaption> -->
-									</div>
-								</div>
-							</figure>
-						</div>
-						<span class="opacity-70 block mb-4"><b class="not-italic underline">Grégory Beaud</b> – Joël Genazzi, tu étais l’un des joueurs avec le plus de temps de glace lors de ce match à Fribourg (41'07). Quels sont les souvenirs un an après?</span>
-						<span class="opacity-50 block mb-4"><b class="not-italic underline">Joël Genazzi</b> – Une image me vient immédiatement en tête. Durant la pause avant la troisième prolongation, j’étais assis à ma place avec Christoph Bertschy à côté de moi. Tout le monde était très excité. Lui, pas du tout. Il était couché au sol avec les jambes surélevées pour tenter de faire circuler le sang. Il n’avait jamais fait ça. Moi non plus. Il avait l’air tellement tranquille que j’ai essayé aussi... C’était une catastrophe (rires). Plus jamais!</span>
-						<span class="opacity-70 block mb-4">– Christoph Bertschy, justement, m’a parlé de pénurie de ravitaillement. Tu as vécu cela comment?
-						</span>
-						<span class="opacity-50 block mb-4">– Je me prépare toujours des smoothies protéinés. En fin de soirée, je n’avais plus rien du tout. Cette soirée, Justin Krueger (ndlr ancien joueur du club et désormais dirigeant) est devenu une légende pour moi et mes coéquipiers (rires). Je ne sais pas comment il a fait, mais il avait plein de trucs à manger. Bananes, barres de céréales. Un vrai magasin. Il n’a pas joué une seule seconde du match, mais il a nourri tout le monde.
-						</span>
-						<span class="opacity-70 block mb-4">– Physiquement, comment tu as vécu cette soirée?
-						</span>
-						<span class="opacity-50 block mb-4">– Comme une expérience intéressante. Le plus dur, c’était de reprendre après les pauses. Je pouvais à peine plier les jambes. Mais il ne fallait pas le montrer aux Fribourgeois. Ils étaient probablement bien émoussés également. Alors je faisais comme si tout allait bien. Après notre retour à Lausanne, toute l’équipe est allée prendre un bain gelé pour tenter de récupérer au mieux. Le lendemain, j’avais énormément de courbatures. Je n’ai pas remis mes patins avant le match d’après. Et je me suis blessé. Ce n’est probablement pas un hasard. Cette soirée m’a laissé énormément de traces.
-						</span>
-						<span class="opacity-70 block mb-4">– Sur le but décisif, tu te fais coucher par Philippe Furrer. Tu peux m’expliquer cette scène?
-						</span>
-						<span class="opacity-50 block mb-4">– Je ne pensais jamais qu’il allait pouvoir faire ça. Je suis sûr que personne ne le pensait d’ailleurs. Notre gardien, Luca Boltshauser se fait également abuser par une feinte. Il a vraiment fait un sacré truc. Je me couche pour bloquer son shoot et il me tourne autour. Peu avant, c’est moi qui perds le puck sur une passe vers un attaquant. De toute façon, il fallait une erreur pour que le match se termine.
-						</span>
-						<span class="opacity-70 block mb-4">– Cela se passe comment après une telle scène?
-						</span>
-						<span class="opacity-50 block mb-4">– Tout de suite après le match, on me voit en gros plan avec Glausi (ndlr Andreas Glauser). Je pense qu’il me dit que ce n’est pas grave pour mon erreur. Et on tente directement de passer à autre chose. On m’a demandé d’aller à l’interview. Je n’en ai pas été capable. J’ai mangé avec mon équipement. Je ne me rendais pas compte d’avoir joué plus de 40 minutes. Je savais juste que je n’avais plus de forces. Et puis j’ai pensé aux fans aussi. Ils ont dû passer une sacrée soirée.
-						</span>
-					</blockquote>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
-						<div class="pt-4 grid gap-4 md:grid-cols-2">
-							<div class="">
-								<img src="img/this/photoxx.jpg" alt="La joue des joueurs de Fribourg Gottéron">
-								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
-							</div>
-							<div class="">
-								<img src="img/this/photo2.jpg" alt="La détresse des joueurs de Lausanne HC">
-								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
-							</div>
-						</div>
-						<figcaption class="py-2 text-xs">La joie des joueurs de Fribourg Gottéron (en noir) contraste avec la détresse des Lausannois.
-						</figcaption>
-					</figure>
-					<p class="text-lg font-light mb-6">Le but en question, Christoph Bertschy ne s’en souvient plus très bien. «Je ne sais pas si je l’ai vu de mes propres yeux ou sur l’écran au ralenti, tente-t-il de se remémorer. Je sortais de la glace et je tentais déjà de retrouver mon souffle. Et tout à coup, il y a eu ce bruit. Sur le moment, c’est très difficile. Ce n’est pas ce soir-là que nous perdons la série, mais nous avons pris un gros coup sur la tête.»
-					</p>
-					<p class="text-lg font-light mb-6">Plus dur encore, l’action décisive a impliqué son pote Joël Genazzi, un pilier du LHC au même titre que lui. Dans ces instants, les mots ont peu d’importance. «Sur le moment, ça me fait évidemment chier. Mais je sais que pour lui, c’est bien pire. C’est un de nos leaders et nous devons être là pour lui. Tout le monde est déçu et nous devons trouver un moyen de nous remobiliser, car la série n’est pas terminée. En ce qui concerne Joël, que peut-on lui reprocher? Rien. Cela aurait pu arriver à tout le monde.»
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
-						<div class="container">
-							<div class="w-full">
-								<img src="img/this/quote-bertschy.png" alt="Citation de Bertschy">
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Christoph Bertschy n’a pas voulu revoir les images avant la fin de ces play-off. L’aspect cathartique ne lui parle pas. «Je pense qu’il est plus important de conserver des pensées positives afin de préparer le match suivant avec le maximum d’énergie. Ressasser ne servait à rien.» Cette défaite cruelle a eu raison du Lausanne HC qui ne s’est jamais relevé et a perdu les deux derniers matches du quart de finale. Le cinquième acte a été une nouvelle fois décidé en prolongation. «J’ai encore ce dénouement en travers de la gorge, même si désormais, je joue pour Fribourg. On ne savait plus que faire contre le power-play et ce soir-là, ils nous ont fait très mal.»
-					</p>
-					<p class="text-lg font-light mb-6">Et comment s’est passé l’accueil dans le vestiaire qui, ce 29 mars 2022 a chaviré? «Très bien, rigole-t-il. Nous avons surtout parlé de nos expériences respectives. Comment les uns et les autres ont vécu ce match. Quand on y pense avec un peu de recul, c’est tout de même une situation assez drôle. Mais il m’a fallu pas mal de temps pour le voir de cette manière.»
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/photo3.jpg" alt="Reto Berra à la fin du match">
-								<figcaption class="py-2 text-xs">Reto Berra ne s’attendait probablement pas à passer une soirée aussi longue. (Photo Adrien Perritaz)</figcaption>
-							</div>
-						</div>
-					</figure>
-					
-				</div>
-			</section>
-		</div>
+		</section>
 
-		<!-- CHAPITRE 2 -->
-		<div class="container max-w-screen-2xl px-4 relative bg-white pb-2 md:pb-12 md:pb-20 md:mb-24">
-			<!-- <h2 class="text-3xl">Match 1 : Victoire fribourgeoise après prolongations, 104 minutes et 58 secondes de jeu</h2> -->
-			<figure class="title -ml-4 -mr-4" id="match2">
-				<img src="img/this/match2desktop.png" alt="Image de la confrontation Genève Berne desktop" class="mobile-hidden">
-				<img src="img/this/match2mobile.png" alt="Image de la confrontation Genève Berne mobile" class="desktop-hidden">
-				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
-			</figure>
-			<section>
-				<div class="container py-4 max-w-2xl">
-					<!-- <h2 class="text-7xl">Chapitre 1</h2> -->
-					<!-- <figure class="-mx-0 lg:-mx-32 xl:-mx-64">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/test.png" alt="">
-							</div>
-						</div>
-					</figure> -->
-					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre I — Chez le consommateur en chaussettes blanches</h3> -->
-					<div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
-						<div class="author w-full">
-								<div class="align-text-bottom text-sm md:text-base">
-									<span class="inline-block font-extrabold uppercase break-normal">
-										<!-- Fribourg - Lausanne: 117’43’'<br>
-										Buts&nbsp;12e&nbsp;Sprunger&nbsp;(5c3)&nbsp;1-0. 13e&nbsp;Desharnais&nbsp;(5c4)&nbsp;2-0. 27e Krakauskas&nbsp;2-1. 44e&nbsp;Bertschy&nbsp;2-2. 105e&nbsp;Furrer&nbsp;3-2. -->
-										Le match plus plus long de l’histoire: 117’43’'
-									</span>
-									<!-- <span class="inline-block">Texte</span> -->
-								</div>
-						</div>
-					</div>
-					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
-						<video controls preload="auto" id="player3" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807497992/rendition/720p/file.mp4?loc=external&signature=000fc8ad1dc5576a9bb060b5ccdeb2a752a7bddab4d1ac1fc4803411f0489b48" type="video/mp4"/>
-							<!-- <source src="https://www.youtube.com/embed/DdDnur3_Gk0" type="video/mp4"/> -->
-							Video not supported.
-						</video>
-					</div>
-					<p class="lettrine text-lg font-light mb-6">«En général, lorsque tu es éliminé, tu passes un moment avec tes coéquipiers pour souffrir ensemble en buvant un verre. Ce soir-là, je me suis retrouvé couché sur mon canapé au milieu de la nuit avec une bière à la main en fixant le plafond. C’est forcément dur d’être éliminé, mais j’étais vidé tant émotionnellement que physiquement». Cette rencontre entre Genève et Berne s’est terminée à 00h54, près de cinq heures après avoir commencé. Une éternité pour tous les acteurs dont Noah Rod, capitaine de Genève-Servette.
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
-						<div class="container">
-							<div class="w-full">
-								<img src="img/this/quote-rod.png" alt="Citation de Rod">
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Le plus dur dans ce revers? Ce but de Mark Arcobello a envoyé les Genevois en vacances. Quatre ans après la cruelle défaite au bout du suspense, le chef de meute grenat n’a pas digéré. La bière en solo en pleine nuit, probablement que oui. Cette soirée par contre… Le capitaine de Genève-Servette n’a pas aimé ce match à rallonge. «C’était nul», tranche-t-il.
-						
-					</p>
-					<p class="text-lg font-light mb-6">Et le fait que les Aigles l’aient perdu n’est pas la principale raison de cet arrière-goût amer. «Je penserais la même chose si nous avions gagné, insiste-t-il. Je me souviens surtout de deux équipes qui ne veulent pas jouer au hockey de peur de commettre une faute qui coûte le match.» Et c’est sur Mike Völlmin que le malheur s’est abattu à la suite d’un puck mal contrôlé.
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/photo4.jpg" alt="Robert Mayer concède le but décisif en fin de troisième prolongation">
-								<figcaption class="py-2 text-xs">Robert Mayer a concédé le but décisif en fin de troisième prolongation.</figcaption>
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Le défenseur qui évolue toujours aux Vernets n’a pas souhaité revenir sur ce match. Il s’est contenté d’avouer qu’il s’agit de la plus grosse erreur de sa carrière. Comme Joël Genazzi lors du match Fribourg - Lausanne, le No 52 a eu le mauvais rôle dans ce scénario totalement fou. «Je me souviens être allé vers lui pour tenter de le réconforter, poursuit Noah Rod. Je lui ai dit qu’il n’y pouvait rien et que cela aurait pu tomber sur n’importe qui et que personne ne lui en voulait. Mais ce n’est pas facile à admettre, je le comprends bien.»
-					</p>
-					<p class="text-lg font-light mb-6">Malgré cette défaite, Chris McSorley, coach du GSHC, n’a qu’un mot à la bouche: «Fierté». Le technicien ontarien a vécu une soirée particulière également. «À minuit pile, j’ai entendu le kop des Vernets commencer à chanter Joyeux Anniversaire pour Chris McSorley, se souvient Pascal Aeberhard, commentateur pour la chaîne MySports. Le speaker a ensuite annoncé sa fête au micro. C’était étrange, car la patinoire est tout à coup devenue très silencieuse pour ce moment. J’ai trouvé cela étonnant dans un premier temps avant de comprendre.»
-					</p>
-
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
-						<div class="container">
-							<div class="w-full">
-								<img src="img/this/quote-mcsorley.png" alt="Citation de Chrise McSorley">
-							</div>
-						</div>
-					</figure>
-
-					<p class="text-lg font-light mb-6">Le souvenir est vivace dans l’esprit du journaliste qui a tenu le crachoir durant plusieurs heures. «Si nous partions en quatrième prolongation, j’aurais terminé la soirée tout seul à l’antenne, a-t-il rigolé. Ils auraient fermé le studio à Rossens.»
-						
-					</p>
-					<p class="text-lg font-light mb-6">Par «chance», il n’a pas eu besoin d’éteindre la lumière en partant puisque la réussite décisive est intervenue à moins de trois minutes de la sixième pause. «Et comme beaucoup de monde, j’étais soulagé, poursuit-il. Fatigué, mais soulagé que cela s’arrête. Au bout d’un moment, tu n’as plus rien à dire d’autre que de parler du temps de jeu de chaque joueur.»
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="pt-4 grid gap-4 md:grid-cols-2">
-							<div class="">
-								<img src="img/this/photomcsorley.jpg" alt="Image de Chris Mcsorley">
-								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
-							</div>
-							<div class="">
-								<img src="img/this/photomcsorley2.jpg" alt="Image de Chrise McSorley">
-								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
-							</div>
-						</div>
-						<figcaption class="py-2 text-xs mb-6">Au cours du match, Chris McSorley sera passé par toutes les émotions</figcaption>
-					</figure>
-					<p class="text-lg font-light mb-6">Ce bouquet final est à l’image de Chris McSorley: haut en couleurs. Car avec l’Ontarien, on a l’impression que rien ne peut se passer normalement. «Lorsque le speaker n’a plus de voix en fin de soirée, tu sais que tu es en train de vivre quelque chose de spécial (rires).» Si aujourd’hui, il en sourit volontiers, le Canadien admet avoir eu besoin de temps pour se remettre de cette défaite. «Cette soirée, c’était comme un essorage, image-t-il. J’étais totalement vidé à la fin.»
-					</p>
-					<p class="text-lg font-light mb-6">Ce match a représenté la dernière apparition de Chris McSorley derrière le banc de l’équipe genevoise. «Vu ce qui était en train de se passer en coulisses, je me rendais bien compte que je ne serais pas de retour la saison suivante, nous a-t-il confié. Est-ce que j’aurais souhaité que cela se termine autrement? Évidemment. Mais j’ai dit aux gars qu’ils avaient tout donné et qu’ils n’avaient rien à se reprocher.»
-					</p>
-
-					<h2 class="text-2xl font-bold mt-4 md:mt-12 mb-4 md:mb-6">Classement des matches les plus longs de l’histoire du hockey suisse</h2>
-					<figure class="float-right mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/tableau.png" alt="Liste des matchs les plus longs du hockey suisse">
-								<!-- <figcaption class="py-2 text-xs">Sébastien se livre: «La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood.»</figcaption> -->
-							</div>
-						</div>
-					</figure>
-					<p class="text-lg font-light mb-6">Après une poignée de main avec Kari Jalonen, le coach vainqueur, Chris McSorley a disparu dans l’ombre, non sans avoir pris le temps de saluer une dernière fois la foule. «Les fans ont été fantastiques, et leur soutien a été merveilleux tout au long de ces années. J’ai tendance à dire que ce match est emblématique de la culture que nous avions voulu instaurer avec Louis (ndlr Matte, son assistant). Honnêtement, la seule chose la plus folle aurait été de gagner le titre pour mon dernier match avec Genève. Mais je me contente de ce souvenir indélébile.»
-					</p>
-					<p class="text-lg font-light mb-6">À 00h54, Mark Arcobello a libéré tout le monde. C’est finalement lui qui a trouvé la lucarne de Robert Mayer après avoir récupéré le puck mal négocié par Mike Völlmin. «Un moment immense dans ma carrière, s’enthousiasme celui qui évolue actuellement à Lugano. C’est de loin le plus long match professionnel auquel j’ai pris part. Je m’en souviendrai toute ma vie. Le puck était en l’air et je l’ai perdu de vue. Tout à coup, il est apparu comme par magie juste devant ma canne. J’ai tiré à l’instinct au-dessus du gant de Robert Mayer. Lorsque le filet tremble... Je ne sais même pas ce que j’ai pu ressentir. C’est indescriptible.»
-					</p>
-					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video"> 
-						<video controls preload="auto" id="player4" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807498021/rendition/720p/file.mp4?loc=external&signature=4f74386013dbd1a8c221b8d15a767ff95f404b3100bdf2b081ae86ccba7e94d7" type="video/mp4"/>
-							Video not supported.
-						</video>
-					</div>
-					
-
-					
-					<p class="text-lg font-light mb-6">Cette soirée hors du commun est, selon l’Américain, le fondement de ce qui a amené le club bernois au titre. «Cela nous a coûté une énergie folle pour gagner. Mais dans le même temps, cela nous a donné un coup de boost incroyable de nous en être sortis de la sorte. Comme nous avions gagné en six matches cette série, nous avions eu un jour de congé le lendemain. Je sais précisément ce que j’en ai fait: rien du tout (rires).» Quelques semaines plus tard, Berne devenait champion. «Si Genève remportait cette série, ils auraient pu aller au bout», détaille Mark Arcobello.
-					</p>
-					<p class="text-lg font-light mb-6">Les problèmes d’approvisionnement, comme à Fribourg, ont été conséquents du côté des visiteurs des Vernets. Mais pas pour le club local qui avait la chance de pouvoir compter sur le stock conséquent de vivres amassé par «Jimmy» Omer. Cela n’a pas rendu la situation facile pour autant. «Nous avions tout ce dont nous avions besoin, confirme Noah Rod. Mais comme tu n’as jamais vécu un truc pareil, tu ne sais pas ce que tu dois faire. Manger au risque d’avoir mal au ventre? Ne pas manger et ne plus avoir d’énergie? Je ne savais pas comment faire pour bien faire.» Mais il n’a pas appris grand-chose pour autant. «Je sais juste que tu es plus fatigué après deux matches dans la même journée qu’après un seul (rires).»
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/photo5.jpg" alt="Mark Arcobello célèbre le but">
-								<figcaption class="py-2 text-xs">Au second plan, Mark Arcobello célèbre ce but qui qualifie Berne pour la demi-finale.</figcaption>
-							</div>
-						</div>
-					</figure>
-					
-					<p class="text-lg font-light mb-6">Les visiteurs, eux, ont dû parer au plus pressé. «Je sais qu’un membre du staff s’est tiré en vitesse dans une épicerie du coin pour tenter de trouver des choses à manger. On n’avait plus rien. En cette fin de troisième prolongation, je paniquais à l’idée de rentrer aux vestiaires pour un quart d’heure et de devoir revenir sur la glace sans rien n’avoir mangé. C’était vraiment un sentiment particulier à vivre.»
-					</p>
-					<p class="text-lg font-light mb-6">Dans la bouche de Mark Arcobello, le débit se fait de plus en plus rapide à mesure que les souvenirs semblent lui revenir à l’esprit. «À chaque fois que j’entrais sur la glace, il y avait ce mélange d’excitation et de stress. C’était à la fois angoissant, mais grisant. Je n’ai jamais vécu cela depuis. Je ne le vivrai probablement jamais plus d’ailleurs. Rendez-vous compte. Nous avons joué deux matches le même soir...»
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/photo6.jpg" alt="La joie des Bernois est à la hauteur de la déception des fans genevois">
-								<figcaption class="py-2 text-xs">La joie des Bernois est à la hauteur de la déception des fans genevois.</figcaption>
-							</div>
-						</div>
-					</figure>
-					
-					<p class="text-lg font-light mb-6">Si Mark Arcobello a pu marquer ce but décisif, c’est en partie à Simon Moser qu’il le doit. Le No 21 des Ours a balancé le long puck en avant qui a mené à l’erreur fatale de Mike Völlmin. L’actuel capitaine du SCB a-t-il eu la même pensée que notre interlocuteur du début d’article? Voulait-il également que cela se termine coûte que coûte, peu importe qui marque? «Non quand même pas, coupe-t-il sèchement. Et je préfère ne pas savoir qui a dit ça (rires). J’espère que ce n’était pas quelqu’un de mon équipe.»
-					</p>
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-8 md:pb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
 				
+				<!-- <figure class="mt-6 mb-12 -mx-0 lg:-mx-32 xl:-mx-64 pt-8 pl-8 relative overflow-auto px-8 py-8">
+					<h4 class="max-w-md text-3xl font-bold">Cycle de vie d’une tasse de café Nespresso / empreinte carbone</h4>
+					<img src="img/this/docs/schema1.svg" alt="" class="float-right">
 					
-					
-					
-					
-					
-				</div>
-			</section>
-		</div>
-
-		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20">
-			    
-
-			
-			<section>
-				<div class="container pt-2 pb-4 max-w-2xl">
-
-					<h2 class="text-2xl font-bold mt-4 md:mt-12 mb-4 md:mb-6">Est-ce bien raisonnable de disputer ces rencontres à rallonge? Non, ce n’est pas raisonnable</h2>
-					<p class="text-lg font-light mb-6">Avec le début des play-off, la question va inévitablement revenir sur le tapis. Comme à chaque occasion où une rencontre dépasse les 60 minutes réglementaires. Est-ce bien raisonnable de disputer ces rencontres à rallonge? Non, ce n’est pas raisonnable. Mais c’est justement pour cette raison précise qu’il ne faut surtout pas arrêter. Toutes les personnes sondées se souvenaient précisément de chacun de leurs faits et gestes ce soir-là. Chaque anecdote avait une importance démesurée.
-					</p>
-					
-					<p class="text-lg font-light mb-6">Les milliers de personnes présentes aux Vernets ou à la BCF Arena pour ces deux matches épiques garderont en tête cette magie à la fois éphémère et interminable. L’ambivalence entre la lassitude et la tension est un sentiment rare. Une anomalie dans un monde cadré. Minuté. Les vidéos TikTok ne durent que quelques secondes. Un épisode sur Netflix ne dure que rarement plus d’une heure. Les matches de tennis sont de plus en plus formatés pour être «télé-compatibles». Cet article est bien trop long (...). Mais en play-off, le temps peut n’avoir plus la moindre importance et qu’importe si le dernier bus est parti ou si le réveil du lendemain matin fera mal.
-					</p>
-					<p class="text-lg font-light mb-6">«Oui, cela me fait encore de la peine aujourd’hui d’avoir perdu. Mais en même temps, je suis reconnaissant d’avoir eu la chance de vivre ce moment hors du temps.» La confession vient de Christoph Bertschy et l’ancien Lausannois évoluant aujourd’hui à Fribourg a parfaitement résumé tout ce que représentent ces matches qui n’en finissent pas. Lorsque le hockey sur glace, sport aux apparences triviales, peut devenir philosophique. Comme une allégorie du temps sur lequel on peut, pour une fois, avoir un semblant d’emprise.
-					</p>
-					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
-						<div class="container py-4">
-							<div class="w-full">
-								<img src="img/this/quote-moser.png" alt="Citation moser">
-							</div>
+				</figure> -->
+				<p class="text-lg font-light mb-10 md:mb-16">
+					C’est ce qu’a démontré en 2019 une enquête de l’entreprise de conseil environnemental Quantis, validée par trois experts indépendants. La méthode comparait différentes solutions de préparation, et avait notoirement révélé que l’impact CO2 d’une tasse de Nespresso Original lungo était inférieur de 30 % à celle de la plupart des machines automatiques à grains. De quoi battre en brèche bien des idées reçues ! 
+				</p>
+				
+				{# <div class="grid md:grid-cols-2 gap-4 md:gap-8">
+					<a href="#match1" class="hover:-translate-y-1">
+						<div class="text-center bg-gray-200 px-4 py-8 -ml-0 lg:-ml-16 xl:-ml-32">
+							<span class="text-sm font-normal uppercase block mb-2">Match 1</span>
+							<span class="text-2xl font-bold inline-block"><img src="img/this/picto-fribourg.png" alt="pictogramme Fribourg Gottéron" class="w-10 float-left mr-2">Fribourg - Lausanne<img src="img/this/picto-lausanne.png" alt="Pictrogramme Lausanne HC" class="w-10 float-right ml-2"></span>
+							<span class="block text-lg">29 mars 2022. 3-2 ap.</span>
 						</div>
+					</a>
+					<a href="#match2" class="hover:-translate-y-1">
+						<div class="text-center bg-gray-200 px-4 py-8 -mr-0 lg:-mr-16 xl:-mr-32">
+							<span class="text-sm font-normal uppercase block mb-2">Match 2</span>
+							<span class="text-2xl font-bold inline-block"><img src="img/this/picto-geneve.png" alt="Pictrogramme SC Genève" class="w-10 float-left mr-2">Genève - Berne<img src="img/this/picto-berne.png" alt="Pictrogramme HC Berne" class="w-10 float-right ml-2"></span>
+							<span class="block text-lg">21 mars 2019. 2-3 ap.</span>
+						</div>
+					</a>
+				</div> #}
+				
+				<!-- <div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase">Connaître le cycle de vie d’une tasse de café</span>
+							</div>
+					</div>
+				</div> -->
+			
+			
+			<!-- <div class="heading -mx-4 py-16">
+				<div class="container max-w-6xl relative">
+					<h2 class="text-6xl max-w-2xl font-bold uppercase -mx-4 pr-12 opacity-70">Connaître le cycle de vie d’une tasse de café</h2>
+					<figure class="w-5/12 h-96 bg-black absolute top-0 right-0" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
 					</figure>
+					
 				</div>
-			</section>
+			</div> -->
+
+			<!-- <div class="heading -mx-4 mt-6 mb-12">
+				<div class="container max-w-2xl">
+					<h2 class="bg-white text-center text-5xl max-w-2xl pr-12 bottom-8 left-16 px-4 -mx-4">Connaître le cycle de vie d’une tasse de café</h2>
+				</div>
+			</div> -->
+
+			</div>
 		</div>
+
+		<section class="color overflow-auto md:mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax1">
+				<div class="parallax-bg w-full bg-center bg-cover absolute" style="background-image:url('img/this/docs/_tasse-ciel.jpg');"></div>
+				<h2 class="absolute md:right-16 bottom-4 md:bottom-16 text-white text-3xl md:text-6xl max-w-lg px-4 md:px-0">Connaître le cycle de vie d’une tasse de café</h2>
+			</figure>
+		</section>
+
+
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
+
+				
+
+				<!-- <figure class="parallax -mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12 aspect-video relative">
+					<div class="parallax-bg w-full h-full bg-center bg-cover" style="background-image:url('img/this/docs/nespresso-landscape2.jpg')"></div>
+					<h2 class="absolute left-16 bottom-16 text-white text-6xl w-2/3">Connaître le cycle de vie d’une tasse de café</h2>
+				</figure> -->
+				<!-- <div class="heading bg-black -mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12 relative" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					<h2 class="text-white text-6xl max-w-2xl font-bold uppercase pr-12 absolute bottom-8 left-16">Connaître le cycle de vie d’une tasse de café</h2>
+				</div> -->
+
+				
+
+				<p class="lettrine text-lg font-light mb-6">
+					Des chiffres étonnants, qui s’expliquent en plongeant dans le détail de l’analyse du cycle de vie (ACV) d’une tasse de café Nespresso. Cette méthode scientifiquement reconnue permet des comparaisons solides, selon des normes universelles. Elle est aussi une source d’information précieuse, parce qu’elle révèle la plupart des impacts environnementaux d’un produit, souvent invisibles ou impensés au quotidien. 
+				</p>
+				<div class="video-wrapper mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
+					<video controls preload="auto" id="player2" playsinline class="video-js">
+						<source src="https://player.vimeo.com/progressive_redirect/playback/813100541/rendition/1080p/file.mp4?loc=external&signature=9d13351cecfee5b34e255e0cc86f2856486174a31b55617b828d368565a54b5a" type="video/mp4"/>
+						Video not supported.
+					</video>
+				</div>
+				<p class="text-lg font-light mb-6">
+					Quantis a ainsi disséqué ce qui se cache derrière ce geste anodin : boire une tasse de café. Le moindre détail a été passé en revue et comptabilisé sur le plan environnemental. Des substances agrochimiques, à l’énergie ou l’eau requises pour la production de cerises de café, à la collecte et au recyclage des capsules en aluminium, en passant par l’efficience thermique du site de production, ou encore la préparation d'une tasse et à son nettoyage !
+				</p>
+				<p class="text-lg font-light mb-6">
+					Ce travail minutieux révèle donc que l’empreinte carbone s’explique surtout par deux étapes a priori hors du champ d’actions direct de l’entreprise, mais que Nespresso a investi avec force, pour en diminuer les émissions : la culture et l’acheminement du café vert (35 %) ainsi que la phase de préparation à la maison (45 %).
+				</p>
+				<!-- <div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase break-normal">
+									Qu’est-ce qu’une production durable ?
+								</span>
+							</div>
+					</div>
+				</div> -->
+			</div>
+			
+			<!-- <div class="heading -mx-4 py-16">
+				<div class="container max-w-6xl relative">
+					<h2 class="text-6xl max-w-2xl font-bold uppercase -mx-4 pr-12 opacity-70">Qu’est-ce qu’une production durable ?</h2>
+					<figure class="w-5/12 h-96 bg-black absolute top-0 right-0" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					</figure>
+					
+				</div>
+			</div> -->
+			<!-- <div class="heading -mx-4 mt-6 mb-12">
+				<div class="container max-w-2xl">
+					<h2 class="bg-white text-center text-5xl max-w-2xl pr-12 bottom-8 left-16 px-4 -mx-4">Qu’est-ce qu’une production durable ?</h2>
+				</div>
+			</div> -->
+			</div>
+		</div>
+
+		<section class="color overflow-auto md:mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax2">
+				<div class="parallax-bg w-full h-full bg-center bg-cover absolute" style="background-image:url('img/this/docs/_paysage-palmer.jpg')"></div>
+				<h2 class="absolute left-4 md:left-16 bottom-4 md:bottom-16 text-white text-3xl md:text-6xl max-w-xl">Qu’est-ce qu’une production <i>durable</i> ?</h2>
+			</figure>
+		</section>
+
+		<!-- <section class="color overflow-auto mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax1">
+				<div class="parallax-bg w-full bg-center bg-cover" style="background-image:url('img/this/docs/_tasse-ciel.jpg');"></div>
+				<h2 class="absolute right-16 bottom-16 text-white text-6xl max-w-lg">Connaître le cycle de vie d’une tasse de café</h2>
+			</figure>
+		</section> -->
+
+
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-8 md:pb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
+			
+			
+				<!-- <div class="heading bg-black -mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12 relative" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					<h2 class="text-white text-6xl max-w-2xl font-bold uppercase pr-12 absolute bottom-8 left-16">Qu’est-ce qu’une production durable ?</h2>
+				</div> -->
+				<p class="lettrine text-lg font-light mb-6">
+					Penchons-nous sur la première étape, l’approvisionnement en café vert. Au sein de ce domaine, une nouvelle idée reçue à déconstruire. Non, la majeure partie de ces émissions ne vient pas de l’acheminement du café. Il est en réalité dû, pour partie, aux produits agrochimiques et fertilisants encore majoritairement utilisés de par le monde. La priorité de Nespresso a donc été de développer un programme d’appui aux caféiculteurs visant à mettre en place des pratiques agricoles respectueuses de l’environnement.  Un changement anticipé il y a des décennies : 2023 marque les 20 ans de son <a href="https://www.sustainability.nespresso.com/aaa-sustainable-quality-program" target="_blank" class="font-bold underline">programme AAA pour une Qualité Durable™</a>.
+				</p>
+				<p class="text-lg font-light">
+					Co-créé en partenariat avec l’ONG Rainforest Alliance, ce programme unique permet d’améliorer la qualité du café et la productivité des exploitations grâce à des pratiques agricoles durables, réduisant les émissions carbones. 
+				</p>
+			</div>
+		</div>
+
+		<section class="color overflow-auto px-4 md:px-0 py-4 md:py-12 relative mb-6">
+			<div class="container max-w-2xl">
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+					<h4 class="max-w-md text-xl md:text-3xl font-bold mb-12 md:mb-12">Le programme AAA pour une Qualité Durable™ en quelques chiffres</h4>
+					<div class="grid md:grid-cols-4 justify-center md:mb-20">
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-globe.svg" alt="Icône d'illustration pour les pays dans le programme AAA" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">18</b></span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Pays dans le Programme AAA (2021)</span>
+						</div>
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-farmer.svg" alt="Icône d'illustration pour les cultivateurs dans le programme AAA" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">142.754</b></span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Caféicultrices-eurs dans le Programme AAA (2021)</span>
+						</div>
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-grains.svg" alt="Icône d'illustration pour le volume de café vert certifié" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">49.3</b>%</span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Volume de café vert certifié* (2021)</span>
+						</div>
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-agronomist.svg" alt="Icône d'illustration pour les agronomes dans le Programme AAA" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">490</b>+</span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Agronomes dans le Programme AAA (2021)</span>
+						</div>
+					</div>
+					<div class="grid md:grid-cols-4 justify-center mb-8 md:mb-20">
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-coins.svg" alt="Icône d'illustration pour les investissements en CHF dans les opérations liées au café" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">45</b>m</span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Investissements en CHF dans les opérations liées au café (assistance technique, et services premiums, 2021)</span>
+						</div>
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-coins.svg" alt="Icône d'illustration pour les investissements cumulés en CHF dans les opérations liées au café" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">316</b>m</span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">Investissements cumulés en CHF dans les opérations liées au café (assistance technique, services premiums, 2014-2021)</span>
+						</div>
+						<div class="w-full px-4 text-center mb-8 md:mb-0">
+							<img src="img/this/docs/icon-woman.svg" alt="Icône d'illustration pour les femmes agronomistes au sein du Programme AAA" class="m-auto">
+							<span class="poppins block text-4xl md:text-5xl font-bold my-4"><b class="counter">33</b>%</span>
+							<span class="poppins block text-md font-light -translate-y-4 md:-translate-y-0">De femmes agronomes au sein du Programme AAA (2021)</span>
+						</div>
+					</div>
+					<figcaption class="text-xs opacity-50 max-w-xs">* Certifié par la Rainforest Alliance, Fairtrade International ou Fair Trade USA, ou organique</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="chapeau container py-8 max-w-2xl">
+				
+				<p class="text-lg font-light mb-6">
+					Par exemple, les caféiculteurs s’engagent à ne commettre aucun acte de déforestation. En échange, ils bénéficient de formations et de conseils dispensés par une équipe de plus de  490 agronomes, leur apprenant des pratiques agricoles régénératrices. 
+				</p>
+				<p class="text-lg font-light mb-6">
+					Et les effets sont visibles : aujourd’hui, 67 % du café sourcé par Nespresso a atteint le niveau bronze sur la scorecard du café régénératif de Rainforest Alliance<b>*</b>. Ce chiffre devrait atteindre 95 % en 2030. 
+				</p>
+				<figcaption class="text-xs opacity-50">* (Bronze on the Rainforest Alliance Regenerative Coffee Scorecard; first estimate based on Enveritas' M&E assessment of 95% of the AAA green coffee volume</figcaption>
+				<!-- <div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase break-normal">
+									Le long terme, pour des changements profonds
+								</span>
+							</div>
+					</div>
+				</div> -->
+				</div>
+			
+			<!-- <div class="heading -mx-4 py-16">
+				<div class="container max-w-6xl relative">
+					<h2 class="text-6xl max-w-2xl font-bold uppercase -mx-4 pr-12 opacity-70">Qu’est-ce qu’une production durable ?</h2>
+					<figure class="w-5/12 h-96 bg-black absolute top-0 right-0" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					</figure>
+					
+				</div>
+			</div> -->
+
+			<!-- <div class="heading -mx-4 mt-6 mb-12">
+				<div class="container max-w-2xl">
+					<h2 class="bg-white text-center text-5xl max-w-2xl pr-12 bottom-8 left-16 px-4 -mx-4">Le long terme, pour des changements profonds</h2>
+				</div>
+			</div> -->
+			
+			</div>
+		</div>
+
+		<section class="color overflow-auto md:mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax3">
+				<div class="parallax-bg w-full h-full bg-center bg-cover absolute" style="background-image:url('img/this/docs/_paysage-grains.jpg')"></div>
+				<h2 class="absolute left-4 md:left-16 bottom-4 md:bottom-16 text-white text-3xl md:text-6xl max-w-xl">Le long terme, pour des changements profonds</h2>
+			</figure>
+		</section>
+
+
+
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
+				<!-- <div class="heading bg-black -mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12 relative" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					<h2 class="text-white text-6xl max-w-2xl font-bold uppercase pr-12 absolute bottom-8 left-16">Le long terme, pour des changements profonds</h2>
+				</div> -->
+				<p class="lettrine text-lg font-light mb-6">
+					Bonne nouvelle, ce travail fait coup double ! Car l’agriculture régénératrice dépasse les seuls enjeux carbone. Elle participe d’une vision large ou intégrale de l’écologie. Il ne s’agit pas seulement de limiter les engrais chimiques, mais de répondre à plusieurs défis à la fois : réduire les impacts dus aux changements climatiques, régénérer la biodiversité, construire des communautés de vie solides autour des caféicultrices et caféiculteurs et assurer leur sécurité financière.
+				</p>
+				<figure class="float-none md:float-right w-auto md:w-96 md:ml-12 md:-mr-48">
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/docs/nespresso-picking-square2.jpg" alt="Images d'une femme qui tend un bras pour atteindre des graines de café">
+							<!-- <figcaption class="py-2 text-xs">La culture du café est un travail difficile à quoi Nespresso souhaite apporter la sécurité économique.</figcaption> -->
+						</div>
+					</div>
+				</figure>
+				<p class="text-lg font-light mb-6">
+					L’enjeu est de respecter la nature et les humains. Face à la pénibilité du métier, aux enjeux que posent les catastrophes naturelles et sécheresses toujours plus fréquentes, les jeunes cultivateurs voudront-ils prendre la relève ? Nespresso travaille depuis des années à de multiples solutions pour procurer une sécurité économique à ses communautés de producteurs. 
+				</p>
+				<p class="text-lg font-light mb-6">
+					Parmi les projets en cours : soutenir la viabilité des exploitations en leur apportant de nouvelles sources de revenus, garantir un prix d’achat minimal du café hors des fluctuations du marché. Un prix aligné sur le montant minimum garanti par le commerce équitable (Faitrade Minimum Price). Enfin, Nespresso propose des solutions de retraites et d’assurances simples et sûres, construites avec des partenaires solides. Ici, les nouvelles technologies apportent une contribution précieuse : en Colombie, un système d’évaluation des précipitations par satellite facilite les dédommagements économiques après une catastrophe naturelle. Une fois le manque ou l’excès de précipitations détecté pour une récolte, le remboursement pour le producteur est automatique.
+				</p>
+				<!-- <div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase break-normal">
+									Les consommateurs aussi sont acteurs !
+								</span>
+							</div>
+					</div>
+				</div> -->
+				<!-- <div class="heading bg-black -mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12 relative" style="background:url('img/this/docs/nespresso-landscape2.jpg'); background-size:150%; background-position: right center;">
+					<h2 class="text-black text-6xl max-w-2xl font-bold uppercase pr-12 absolute bottom-8 left-16">Les consommateurs aussi sont acteurs !</h2>
+				</div> -->
+			</div>
+			
+			<!-- <div class="heading -mx-4 mt-6 mb-12">
+				<div class="container max-w-2xl">
+					<h2 class="bg-white text-center text-5xl max-w-2xl pr-12 bottom-8 left-16 px-4 -mx-4">Les consommateurs aussi sont acteurs !</h2>
+				</div>
+			</div> -->
+
+			</div>
+		</div>
+
+		<section class="color overflow-auto md:mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax4">
+				<div class="parallax-bg w-full h-full bg-center bg-cover absolute" style="background-image:url('img/this/docs/homebag.jpg')"></div>
+				<span class="parallax-overlay block absolute w-full h-1/2 bottom-0 md:hidden" style="background:linear-gradient(to top, #000000 0%, transparent 100%) 0% 0% no-repeat padding-box;"></span>
+				<h2 class="absolute left-4 md:left-auto md:right-16 bottom-4 md:bottom-16 text-white text-3xl md:text-6xl max-w-xl">Les consommateurs aussi sont acteurs !</h2>
+			</figure>
+		</section>
+
+
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
+				<p class="lettrine text-lg font-light">
+					Enfin, examinons la phase de préparation du café à la maison, l’autre principal secteur d’impact. Pour agir dans ce domaine, Nespresso a toujours misé sur des machines innovantes, réparables et efficientes énergétiquement. Mais dans un souci de circularité, l’entreprise s’efforce d’augmenter le nombre de machines reconditionnées. Ces dernières intègrent une part toujours plus grande de plastiques recyclés et de composants et matériaux recyclables. Leur efficacité énergétique ne cesse de s’améliorer. De plus, en 2022 en Suisse, le <a href="https://www.sustainability.nespresso.com/net-zero" target="_blank" class="font-bold underline">programme pilote RELOVE</a> a permis de retourner et faire réparer son appareil dans les boutiques Nespresso… Parce que prolonger la durée de vie d’un produit, c’est réduire son impact carbone… Et diminuer les déchets ! 
+				</p>
+			</div>
+		</div>
+
+		<section class="color overflow-auto px-4 md:px-0 py-4 md:py-12 relative mb-6" id="svg-steps">
+			<figure class="container max-w-2xl">
+				<img src="img/this/docs/logo-relove.png" alt="Logo programme Relove de Nespresso" class="w-36 mb-4">
+					<h4 class="max-w-md text-xl md:text-3xl font-bold mb-12 md:mb-12">Comment sont reconditionnées les machines Nespresso</h4>
+					<ul class="w-11/12 md:w-9/12 m-auto my-8 relative">
+						<li class="text-lg md:text-xl py-6 relative" id="step1">
+							<img src="img/this/docs/icon-collect.svg" alt="Icône point de collecte Nespresso" class="absolute -left-10">
+							<div>
+								<span class="font-semibold block">Étape 1</span>
+								Les machines sont parfois renvoyées à Nespresso ou ont été endommagées
+							</div>
+						</li>
+						<li class="text-lg md:text-xl py-6 relative" id="step2">
+							<img src="img/this/docs/icon-wrench.svg" alt="Icône inspection de machines par Nespresso" class="absolute -left-12">
+							<div>
+								<span class="font-semibold block">Étape 2</span>
+								Si une machine peut être reconditionnée, elle est inspectée soigneusement, réparée quand cela est nécessaire et nettoyée. Les pièces défectueuses sont remplacées et son logiciel mis à jour
+							</div>
+						</li>
+						<li class="text-lg md:text-xl py-6 relative " id="step3">
+							<img src="img/this/docs/icon-package.svg" alt="Icône repackaging des machines" class="absolute -left-14">
+							<div>
+								<span class="font-semibold block">Étape 3</span>
+								Les machines sont ensuite reconditionnées et remises en vente par l'intermédiaire des canaux de vente directe de Nespresso (boutique, CRC, e-commerce)
+							</div>
+						</li>
+						<li class="text-lg md:text-xl pt-6 relative" id="step4">
+							<img src="img/this/docs/icon-label.svg" alt="Icône machine certifiée par Nespresso" class="absolute -left-14">
+							<div>
+								<span class="font-semibold block">Étape 4</span>
+								Toutes les machines reconditionnées Nespresso voient leur qualité certifiée Nespresso, avec les mêmes conditions de garantie qu'une machine Nespresso neuve
+							</div>
+						</li>
+						<img src="img/this/docs/arrow.svg" alt="Bout de la flèche qui pointe vers le bas" class="absolute -bottom-8 left-0 -translate-x-3/4">
+					</ul>
+			</figure>
+		</section>
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="chapeau container py-8 max-w-2xl">
+				
+				
+				<p class="text-lg font-light mb-6">
+					Assurer la durabilité d’une tasse de café demande donc un travail très en amont de la chaîne de production. Mais Nespresso s’implique aussi sur l’aval, et ce depuis des décennies. Si le conditionnement en capsule ne représente que 14 % de l’impact carbone d’une tasse de Nespresso lungo, la marque suisse déploie depuis 32 ans <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=C_F9HH0MkZJuqDJGNxdwPpLGk2A6iyI_Jb9zFhdOwD_v36cbIKggAEAEguVRg9e3HgdQEoAGnrNiAA8gBAakCOWawFZ1Gsj7IA9ggqgRfT9C4dEc81AoU70YaPi5OpNHSQlZARYrThjjzhwa3k5W8fLXI7XX1DcAK7UUmS4171_Rw8jmR5cxkOaFV8fYzxXAF8HHnZfJpIKtJ34ZfjIpm1RInF83aQPzA2HgCOdnABIKtpcvRA4AFkE6IBaWXovM4oAZmgAfB06d_kAcBqAemvhuoB7ytsQKoB7mrsQKoB7masQKoB_PRG6gH7tIbqAf_nLECqAfK3BuoB7uksQKoB9imsQKoB9uqsQKoB9CqsQKgCLydPbAIAdIIHhABIKSAAjIDhcBCOgmAgICAgJCAAgJCARBI0ezzKpoJNGh0dHBzOi8vd3d3Lm5lc3ByZXNzby5jb20vY2gvZnIvY29tbWl0bWVudC1yZWN5Y2xpbmexCbpEuoYYXtRhuQntIq2Ked-bvPgJAeALAbgMAegMBqoNAkNIghQjCAISH25lc3ByZXNzbyByZWN5Y2xlciBsZXMgY2Fwc3VsZXPIFMbxnpLC_pqUe9AVAZgWAfgWAYAXAZIXCBIGCAEQAxgm4BcB&ved=2ahUKEwib5MSJpYH-AhUZi_0HHfmEA2sQ0Qx6BAgIEAE&nis=8&cid=CAASIORoOtksbWwZhZsUIQTWFGQPI-8Jemmdp6NzhokLdUy2&dblrd=1&sig=AOD64_1ARhSRcsHLH1mBwU5ilTcS6cK9Ew&adurl=https://clickserve.dartsearch.net/link/click%3Flid%3D43700067532437958%26ds_s_kwgid%3D58700007502266190%26ds_a_cid%3D267492205%26ds_a_caid%3D15274118053%26ds_a_agid%3D124980385410%26ds_a_fiid%3D%26ds_a_lid%3Dkwd-1462584900603%26ds_a_extid%3D%26%26ds_e_adid%3D561870666205%26ds_e_matchtype%3Dsearch%26ds_e_device%3Dc%26ds_e_network%3Dg%26%26ds_url_v%3D2%26ds_dest_url%3Dhttps://www.nespresso.com/ch/fr/commitment-recycling%3Fgclsrc%3Daw.ds%26" class="font-bold underline">un système de recyclage extrêmement poussé</a> et simple pour ses consommateurs. Aujourd’hui, 72% des capsules Nespresso consommées à la maison sont récupérées dans plus de 3700 points de collecte en Suisse. Le service gratuit « Recycling at Home » permet de retourner ses capsules usagées par La Poste, en les déposant simplement dans sa boîte à lait.
+				</p>
+
+				<!-- <figure class="float-left w-96 ml-12 -mr-48">
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/docs/zeta.jpg" alt="Photo du consommateur">
+							<figcaption class="py-2 text-xs">Sébastien se livre: «La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood.»</figcaption>
+						</div>
+					</div>
+				</figure> -->
+				<figure class="mb-6">
+					<div class="container py-4 max-w-xs md:max-w-sm">
+						<div class="w-full">
+							<img src="img/this/docs/zeta.jpg" alt="Photo des baskets ZETA de nespresso faites de matériaux recyclés">
+							<figcaption class="py-2 text-xs">Zèta x Nespresso : les baskets « RE:GROUND » fabriquées en partie à partir de marc de café recyclé.
+							</figcaption>
+						</div>
+					</div>
+				</figure>
+
+				<p class="text-lg font-light mb-6">
+					L’aluminium et le marc de café ainsi récupérés ont donné naissance à une série de produits design et upcyclés, issus de collaboration avec des marques iconiques, (Caran d’Ache, Victorinox...) Dernières nées de cette série d’innovation, les <a href="https://www.nespresso.com/ch/fr/zeta-sneaker" target="_blank" class="font-bold underline">baskets « RE:GROUND » de Zèta x Nespresso</a> . Leurs semelles intègrent du marc de café Nespresso recyclé, l’équivalent de 12 espressos!
+				</p>
+
+				<!-- <figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/placeholder.png" alt="Placeholder">
+						</div>
+						<div class="">
+							<img src="img/placeholder.png" alt="Placeholder">
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs mb-6">Style, basket, capsul quelque-part par ici ??</figcaption>
+				</figure> -->
+
+				<!-- <div class="container authors flex py-6 border-y border-gray-400 mt-4 md:mt-0 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase break-normal">
+									Un travail holistique et ambitieux
+								</span>
+							</div>
+					</div>
+				</div> -->
+
+			</div>
+			
+			<!-- <div class="heading -mx-4 mt-6 mb-12">
+				<div class="container max-w-2xl">
+					<h2 class="bg-white text-center text-5xl max-w-2xl pr-12 bottom-8 left-16 px-4 -mx-4">Un travail holistique et ambitieux</h2>
+				</div>
+			</div> -->
+
+			</div>
+		</div>
+
+		<section class="color overflow-auto md:mb-8">
+			<figure class="parallax relative overflow-hidden" id="parallax5">
+				<div class="parallax-bg w-full h-full bg-center bg-cover absolute" style="background-image:url('img/this/docs/_focus.jpg')"></div>
+				<h2 class="absolute left-4 md:left-16 bottom-4 md:bottom-16 text-white text-3xl md:text-6xl max-w-xl">Un travail holistique et ambitieux</h2>
+			</figure>
+		</section>
+
+
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-8">
+			<div class="container pt-8 pb-4 max-w-2xl">
+
+				<p class="lettrine text-lg font-light mb-6">
+					La durabilité chez Nespresso aujourd’hui provient donc d’un travail régulier, précis et minutieux, entamé il y a des décennies. Elle suppose de sensibiliser des générations entières, de changer des habitudes de production, de consommation, de développer de nouvelles technologies et solutions, de mesurer les impacts avec toujours plus de précision…
+				</p>
+				<p class="text-lg font-light mb-6">
+					Une démarche qui demande un engagement sur le temps long, et qui a été récompensée. Depuis 2022, l’entreprise suisse est <a href="https://www.nespresso.com/pro/ch/fr/b-corp" target="_blank" class="font-bold underliner">certifiée B Corp</a>. Ce label indépendant qui établit des normes de performance sociale et environnementale vérifiées et élevées, passe en revue la gouvernance de l’entreprise, l’impact environnemental ainsi que toutes les répercussions pour ses clients, partenaires, fournisseurs, employés… Grâce à l’effort de toutes ses parties prenantes, l’impact carbone d’une tasse de café Nespresso a diminué de 24 % depuis 2009. Et si les efforts de chacun se poursuivent, une tasse de café Nespresso sera neutre en carbone dès 2035 !
+				</p>
+				<p class="text-lg font-light mb-6 bg-gray-100 pl-8 pr-4 py-4 mt-12 border-l-8 border-gray-200">
+					<span class="font-semibold block pb-4">Présenté par un partenaire</span>
+					<span class="block pb-4">Cet article a été réalisé par <a href="https://www.ringier-advertising.ch/de/content-und-kreation/" target="_blank" class="underline">Ringier Brand Studio</a> à la demande d'un client. Les contenus ont été préparés de manière journalistique et répondent aux exigences de qualité de Ringier.</span>
+					Contact : <a href="mailto:brandstudio@ringier.ch" class="underline">E-mail à Brand Studio</a>
+				</p>
+			</div>
+			
+			
+		</div>
+
+		
+
+		
+
+		
 
 		<footer class="container py-8 max-w-full relative">   
 			<div class="w-80 top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 absolute">
@@ -456,16 +715,24 @@
 			</div>
 		</footer> 
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 		{# <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> #}
-		<script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+		<script src="js/counter-up.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+		
 		<!-- <script src="js/yt.js"></script> -->
 		<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
 		<!-- <script src="js/plugins.js"></script> -->
 		<script src="js/header.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/intro.js"></script>
+		{# <script src="js/intro.js"></script> #}
 		<!-- <script src="js/headroom.min.js"></script> -->
 		
 

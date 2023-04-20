@@ -11,6 +11,10 @@ header
 
         &.headroom--not-top{ background: rgba(0, 0, 0, .5); transition: all .2s; }
     }
+    &.trans
+    {
+        background: transparent;
+    }
     &.headroom--top{}
     &.headroom--pinned{}
     
@@ -20,6 +24,7 @@ header
         transition: all .2s;
     }
 }
+
 
 .btn
 {

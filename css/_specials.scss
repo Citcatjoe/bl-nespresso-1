@@ -1,8 +1,13 @@
+html
+{
+    scroll-behavior: smooth;
+}
 body 
 {
     opacity: 0;
     visibility: hidden;
     transition: all .4s;
+    //background: #FDDD93;
 
     &.is-visible
     {

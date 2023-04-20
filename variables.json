@@ -1,15 +1,17 @@
 {
-	"title": "Ces deux matches ont été les plus longs de l’histoire du hockey suisse",
-	"titlesocial": "Flashback sur les deux matches les plus longs de l’histoire du hockey suisse",
-	"description": "A l’occasion du début des play-off de hockey, Blick revient sur deux matches de légendes qui se sont terminés au milieu de la nuit",
+	"title": "Le café en capsules serait plus durable qu'on le pense",
+	"titlesocial": "Le café en capsules serait plus durable qu'on le pense",
+	"description": "Une étude indépendante montre que le café portionné a une empreinte carbone réduite par rapport à la plupart des machines automatiques à grains.",
 	"authors": {
-		"photos": "Keystone-ATS, Adrien Perritaz ",
-		"videos": "MySports",
-		"writer": "Grégory Beaud",
+		"photos": "Fournies par Nespresso",
+		"videos": "Fournies par Nespresso",
+		"writer": false,
 		"dev": "César Greppin"
 	},
 	"imgSocial": "social.jpg",
-	"headertheme": "neg", 
+	"headertheme": "trans", 
+	"blickWhite": false,
+	"blickBlack": true,
 	"headerBoxed": false,
 	"pubDate": "2020-07-23T11:00:00+00:00",
 	"partner": {
